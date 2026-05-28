@@ -1,11 +1,8 @@
-/* global React, Logomark, Wordmark */
+/* global React, Logomark, Lockup */
 
 function Nav() {
   const navWrap = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "18px 32px",
+    padding: "14px 0",
     background: "rgba(255,255,255,0.92)",
     backdropFilter: "blur(12px)",
     WebkitBackdropFilter: "blur(12px)",
@@ -14,25 +11,16 @@ function Nav() {
     top: 0,
     zIndex: 10,
   };
-  const links = { display: "flex", alignItems: "center", gap: 24 };
-  const link = {
-    fontSize: 13,
-    color: "#4A6480",
-    fontWeight: 400,
-    textDecoration: "none",
-    cursor: "pointer",
-    transition: "color 0.15s",
-  };
   return (
     <nav style={navWrap}>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div className="mk-container mk-nav-inner">
         <Lockup height={26} />
-      </div>
-      <div style={links}>
-        <a style={link} href="#how">How it works</a>
-        <a style={link} href="#honest">Why it's different</a>
-        <a style={link} href="#pricing">Pricing</a>
-        <button className="mk-btn mk-btn-nav">Get started</button>
+        <div className="mk-nav-links">
+          <a className="mk-nav-link" href="#how">How it works</a>
+          <a className="mk-nav-link" href="#honest">Why it's different</a>
+          <a className="mk-nav-link" href="#pricing">Pricing</a>
+          <a className="mk-btn mk-btn-nav" href="./app/">Get started</a>
+        </div>
       </div>
     </nav>
   );

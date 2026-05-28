@@ -2,12 +2,11 @@
 
 const HOW_STEPS = [
   {
-    title: "Tell us where you've been",
+    title: "Build your context",
     desc: (
       <>
-        Upload your resume or walk us through your experience conversationally.{" "}
-        <strong style={{ color: "#4A6480", fontWeight: 500 }}>No forms, no templates</strong>{" "}
-        — just a real conversation about your career so far.
+        A two-phase conversation captures your background, target roles, principles, signature
+        stories, and writing voice. <strong style={{ color: "#4A6480", fontWeight: 500 }}>No forms.</strong>
       </>
     ),
   },
@@ -15,19 +14,18 @@ const HOW_STEPS = [
     title: "We find what's missing",
     desc: (
       <>
-        CareerChief surfaces the gaps between your actual impact and how you're presenting it —{" "}
-        <strong style={{ color: "#4A6480", fontWeight: 500 }}>achievements buried in vague language</strong>,
-        the leadership no one would know about, the context that changes everything.
+        Gaps between your actual impact and how you're presenting it —{" "}
+        <strong style={{ color: "#4A6480", fontWeight: 500 }}>buried achievements</strong>, leadership
+        no one would know about, context that changes everything.
       </>
     ),
   },
   {
-    title: "Build your career brief",
+    title: "Evaluate any role",
     desc: (
       <>
-        A living document that captures your narrative, your strengths, and your positioning —{" "}
-        <strong style={{ color: "#4A6480", fontWeight: 500 }}>yours to own and evolve</strong>,
-        not locked behind a subscription.
+        Paste a job description; get a three-table scorecard — Fit With Me, My Fit, and an{" "}
+        <strong style={{ color: "#4A6480", fontWeight: 500 }}>honest recruiter-screen likelihood.</strong>
       </>
     ),
   },
@@ -35,7 +33,7 @@ const HOW_STEPS = [
     title: "Show up ready",
     desc: (
       <>
-        Tailor for specific roles, prep for interviews, sharpen your LinkedIn.{" "}
+        Tailored cover letters, resume variants, and an eight-section interview cheat sheet.{" "}
         <strong style={{ color: "#4A6480", fontWeight: 500 }}>Every output is grounded in your real story</strong>{" "}
         — not hallucinated bullet points.
       </>
@@ -43,67 +41,65 @@ const HOW_STEPS = [
   },
 ];
 
-function Step({ n, title, desc, last }) {
+function Step({ n, title, desc }) {
   return (
-    <div style={{ display: "flex", gap: 22, paddingBottom: last ? 0 : 32, position: "relative" }}>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flexShrink: 0, width: 38 }}>
-        <div
-          style={{
-            width: 38,
-            height: 38,
-            borderRadius: "50%",
-            background: "#fff",
-            border: "0.5px solid rgba(26,47,74,0.10)",
-            display: "grid",
-            placeItems: "center",
-            fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.024em",
-            fontSize: 17,
-            color: "#1A2F4A",
-            fontWeight: 400,
-            zIndex: 1,
-            boxShadow: "0 1px 4px rgba(26,47,74,0.06)",
-          }}
-        >
-          {n}
-        </div>
-        {!last && (
-          <div style={{ width: "0.5px", flex: 1, background: "rgba(26,47,74,0.10)", marginTop: 6 }} />
-        )}
+    <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+      <div
+        style={{
+          width: 44,
+          height: 44,
+          borderRadius: "50%",
+          background: "#fff",
+          border: "0.5px solid rgba(26,47,74,0.10)",
+          display: "grid",
+          placeItems: "center",
+          fontFamily: "'DM Serif Display', serif",
+          letterSpacing: "-0.024em",
+          fontSize: 19,
+          color: "#1A2F4A",
+          fontWeight: 400,
+          boxShadow: "0 1px 4px rgba(26,47,74,0.06)",
+        }}
+      >
+        {n}
       </div>
-      <div style={{ paddingTop: 8 }}>
-        <div style={{ fontSize: 15, fontWeight: 600, color: "#1A2F4A", marginBottom: 5 }}>{title}</div>
-        <div style={{ fontSize: 14, color: "#8AA0B4", lineHeight: 1.65 }}>{desc}</div>
+      <div style={{ fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.024em", fontSize: 22, color: "#1A2F4A", lineHeight: 1.2, fontWeight: 400 }}>
+        {title}
       </div>
+      <div style={{ fontSize: 14, color: "#8AA0B4", lineHeight: 1.65 }}>{desc}</div>
     </div>
   );
 }
 
 function HowItWorks() {
   return (
-    <section id="how" style={{ padding: "60px 32px 52px" }}>
-      <div style={{ marginBottom: 12 }}>
-        <Kicker>How it works</Kicker>
-      </div>
-      <h2
-        style={{
-          fontFamily: "'DM Serif Display', serif", letterSpacing: "-0.024em",
-          fontSize: 34,
-          color: "#1A2F4A",
-          lineHeight: 1.15,
-          marginBottom: 10,
-          fontWeight: 400,
-        }}
-      >
-        A chief of staff<br/>for your career
-      </h2>
-      <p style={{ fontSize: 15, color: "#8AA0B4", lineHeight: 1.65, marginBottom: 40, maxWidth: 420 }}>
-        The best chiefs of staff don't just execute — they listen, identify what's missing,
-        and make sure you're always positioned to succeed. That's exactly what CareerChief does.
-      </p>
-      <div>
-        {HOW_STEPS.map((s, i) => (
-          <Step key={s.title} n={i + 1} title={s.title} desc={s.desc} last={i === HOW_STEPS.length - 1} />
-        ))}
+    <section id="how" style={{ padding: "104px 0 88px" }}>
+      <div className="mk-container">
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", gap: 14, marginBottom: 52 }}>
+          <Kicker>How it works</Kicker>
+          <h2
+            style={{
+              fontFamily: "'DM Serif Display', serif",
+              letterSpacing: "-0.024em",
+              fontSize: 42,
+              color: "#1A2F4A",
+              lineHeight: 1.12,
+              fontWeight: 400,
+              maxWidth: 640,
+            }}
+          >
+            A chief of staff <em style={{ color: "#2A6C8E", fontStyle: "italic" }}>for your career.</em>
+          </h2>
+          <p style={{ fontSize: 16, color: "#8AA0B4", lineHeight: 1.65, maxWidth: 560 }}>
+            The best chiefs of staff don't just execute — they listen, identify what's missing,
+            and make sure you're always positioned to succeed.
+          </p>
+        </div>
+        <div className="mk-steps">
+          {HOW_STEPS.map((s, i) => (
+            <Step key={s.title} n={i + 1} title={s.title} desc={s.desc} />
+          ))}
+        </div>
       </div>
     </section>
   );

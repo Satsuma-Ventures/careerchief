@@ -14,9 +14,84 @@ html, body {
 }
 
 .mk-page {
-  max-width: 720px;
-  margin: 0 auto;
+  width: 100%;
   background: var(--color-off-white);
+}
+
+.mk-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-inline: 56px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 840px) {
+  .mk-container { padding-inline: 28px; }
+}
+
+/* ── Top nav ──────────────────────────────────────── */
+.mk-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.mk-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.mk-nav-link {
+  font-size: 13px;
+  color: #4A6480;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.15s;
+  white-space: nowrap;
+}
+.mk-nav-link:hover { color: var(--color-navy); }
+
+@media (max-width: 720px) {
+  .mk-nav-links { gap: 16px; }
+  .mk-nav-link { display: none; }
+}
+
+/* ── Hero two-column ──────────────────────────────── */
+.mk-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 64px;
+  align-items: center;
+}
+@media (max-width: 960px) {
+  .mk-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* ── 4-column step row ────────────────────────────── */
+.mk-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  position: relative;
+}
+@media (max-width: 960px) {
+  .mk-steps { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+@media (max-width: 560px) {
+  .mk-steps { grid-template-columns: 1fr; gap: 24px; }
+}
+
+/* ── 2-column for the honest section ──────────────── */
+.mk-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+@media (max-width: 840px) {
+  .mk-two-col { grid-template-columns: 1fr; gap: 32px; }
 }
 
 /* Buttons */
@@ -30,7 +105,16 @@ html, body {
   cursor: pointer;
   transition: background var(--t-fast), color var(--t-fast), opacity var(--t-fast);
   letter-spacing: 0.005em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.2;
 }
+a.mk-btn:visited { color: inherit; }
+a.mk-btn-primary, a.mk-btn-primary:visited { color: #fff; }
+a.mk-btn-inverse, a.mk-btn-inverse:visited { color: var(--color-navy); }
+a.mk-btn-ghost, a.mk-btn-ghost:visited { color: var(--color-navy); }
+a.mk-btn-nav, a.mk-btn-nav:visited { color: #fff; }
 .mk-btn-primary { background: var(--color-navy); color: #fff; }
 .mk-btn-primary:hover { background: var(--color-navy-dark); }
 .mk-btn-ghost {

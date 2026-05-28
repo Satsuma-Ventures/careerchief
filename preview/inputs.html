@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="_card.css">
+<style>
+  .field { display:flex; flex-direction:column; gap: 6px; }
+  .field label { font-size: 13px; font-weight: 500; color: #1A2F4A; }
+  .field input, .field textarea { font-family: var(--font-sans); font-size: 14px; padding: 10px 14px; border: 1px solid var(--color-border); border-radius: 8px; background: #fff; color: #1A2F4A; outline: none; transition: border-color 0.15s ease; }
+  .field input:focus, .field textarea:focus { border-color: #2A6C8E; }
+  .field .hint { font-size: 12px; color: var(--color-text-muted); }
+</style>
+</head><body><div class="cc-card">
+  <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+    <div class="field">
+      <label>Current role</label>
+      <input type="text" value="Senior Product Manager" />
+      <div class="hint">Used to anchor your story.</div>
+    </div>
+    <div class="field">
+      <label>Years of experience</label>
+      <input type="text" placeholder="e.g. 7" />
+    </div>
+    <div class="field" style="grid-column: 1 / -1;">
+      <label>What you're best at</label>
+      <textarea rows="2" placeholder="One sentence — no resume copy">Turning ambiguous early-stage problems into shipped product.</textarea>
+    </div>
+  </div>
+</div></body></html>

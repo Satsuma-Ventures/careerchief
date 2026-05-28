@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CareerChief — Brand Book & Design System</title>
+<link rel="icon" href="./assets/careerchief-favicon.svg" type="image/svg+xml" />
+<link rel="stylesheet" href="./styles/brand-book.css" />
+</head>
+<body>
+
+<!-- ──────────────────────────────────────────────────────────────
+     Sticky top navigation
+     ────────────────────────────────────────────────────────────── -->
+<nav class="bb-nav" data-screen-label="Nav">
+  <div class="bb-nav-inner">
+    <a href="#top" class="bb-nav-brand" aria-label="CareerChief">
+      <img src="./assets/careerchief-logomark.svg" alt="CareerChief" />
+    </a>
+    <ul class="bb-nav-links">
+      <li><a href="#foundation">Foundation</a></li>
+      <li><a href="#logomark">Logomark</a></li>
+      <li><a href="#color">Color</a></li>
+      <li><a href="#type">Type</a></li>
+      <li><a href="#spacing">Spacing</a></li>
+      <li><a href="#elevation">Elevation</a></li>
+      <li><a href="#components">Components</a></li>
+      <li><a href="#principles">Principles</a></li>
+      <li><a href="#tokens">Tokens</a></li>
+    </ul>
+
+    <details class="bb-nav-select" id="bbNavSelect">
+      <summary>
+        <span class="bb-nav-current" data-current>Foundation</span>
+        <svg class="bb-nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </summary>
+      <ul class="bb-nav-select-menu" role="menu">
+        <li><a href="#foundation" data-target="foundation"><span class="num">01</span> Foundation</a></li>
+        <li><a href="#logomark"   data-target="logomark"><span class="num">02</span> Logomark</a></li>
+        <li><a href="#color"      data-target="color"><span class="num">03</span> Color</a></li>
+        <li><a href="#type"       data-target="type"><span class="num">04</span> Type</a></li>
+        <li><a href="#spacing"    data-target="spacing"><span class="num">05</span> Spacing</a></li>
+        <li><a href="#elevation"  data-target="elevation"><span class="num">06</span> Elevation</a></li>
+        <li><a href="#components" data-target="components"><span class="num">07</span> Components</a></li>
+        <li><a href="#principles" data-target="principles"><span class="num">08</span> Principles</a></li>
+        <li><a href="#tokens"     data-target="tokens"><span class="num">09</span> Tokens</a></li>
+      </ul>
+    </details>
+  </div>
+</nav>
+
+<div id="top"></div>
+
+<!-- ──────────────────────────────────────────────────────────────
+     HERO
+     ────────────────────────────────────────────────────────────── -->
+<header class="bb-container bb-hero" data-screen-label="Hero">
+  <div class="bb-hero-lockup">
+    <img src="./assets/careerchief-lockup.svg" alt="CareerChief" />
+  </div>
+  <h1>Brand book &amp; <em>design system.</em></h1>
+  <p class="bb-hero-tag">
+    CareerChief works alongside you, not on top of you. Everything here — the
+    palette, the type, the components — exists to make that promise visible.
+    Authoritative, warm, and grounded in real experience.
+  </p>
+  <div class="bb-hero-meta">
+    <span>Your career chief of staff</span>
+    <span class="dot">·</span>
+    <span>v1.0</span>
+    <span class="dot">·</span>
+    <span>2026</span>
+  </div>
+</header>
+
+<!-- ──────────────────────────────────────────────────────────────
+     01 · FOUNDATION
+     ────────────────────────────────────────────────────────────── -->
+<section id="foundation" class="bb-container bb-section" data-screen-label="01 Foundation">
+  <div class="bb-section-head">
+    <div class="bb-section-num">01</div>
+    <h2>Brand foundation.</h2>
+    <p class="bb-section-lede">
+      Less &ldquo;AI productivity tool,&rdquo; more the smartest person in your
+      corner. CareerChief is a chief of staff for your career — invested in
+      your success, never in the spotlight.
+    </p>
+  </div>
+
+  <div>
+    <div class="bb-row">
+      <div class="bb-row-label">Name</div>
+      <div class="bb-row-body">
+        <p><strong>CareerChief.</strong> A chief of staff for your career —
+        a trusted partner working behind the scenes, fluent in your story, ready
+        when an opportunity is.</p>
+      </div>
+    </div>
+    <div class="bb-row">
+      <div class="bb-row-label">Tagline</div>
+      <div class="bb-row-body">
+        <p><em>Your career chief of staff.</em></p>
+      </div>
+    </div>
+    <div class="bb-row">
+      <div class="bb-row-label">Mission</div>
+      <div class="bb-row-body">
+        <p>Help job seekers articulate the experience they already have —
+        not invent new bullet points. The system surfaces gaps, sharpens
+        narrative, and shows up prepared for every conversation.</p>
+      </div>
+    </div>
+    <div class="bb-row">
+      <div class="bb-row-label">Positioning</div>
+      <div class="bb-row-body">
+        <p>CareerChief sits between resume builder and career coach —
+        grounded enough to be trusted with the truth of your career, attentive
+        enough to know what&rsquo;s missing. The work is collaborative.
+        Everything is built from what you actually did.</p>
+      </div>
+    </div>
+    <div class="bb-row">
+      <div class="bb-row-label">Tone of voice</div>
+      <div class="bb-row-body">
+        <p>Authoritative but warm. Speaks like a senior advisor who has read
+        every line of your resume — direct, specific, never showy. Lift comes
+        from accuracy, not adjectives.</p>
+        <ul class="bb-list" style="margin-top: 18px;">
+          <li>Always second person — &ldquo;you,&rdquo; &ldquo;your.&rdquo; Never &ldquo;users&rdquo; or &ldquo;candidates.&rdquo;</li>
+          <li>Sentence case everywhere. ALL CAPS is reserved for the kicker eyebrow.</li>
+          <li>Em dashes ( — ) with spaces, in place of parentheses for asides.</li>
+          <li>Name what the feature actually does — &ldquo;Surface gaps in your story,&rdquo; not &ldquo;AI-powered story analysis.&rdquo;</li>
+          <li>No exclamation points. No emoji in product or marketing.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     02 · LOGOMARK
+     ────────────────────────────────────────────────────────────── -->
+<section id="logomark" class="bb-container bb-section" data-screen-label="02 Logomark">
+  <div class="bb-section-head">
+    <div class="bb-section-num">02</div>
+    <h2>Logomark.</h2>
+    <p class="bb-section-lede">
+      A geometric, faceted crown — five points constructed from angular
+      triangular segments with a diagonal cut through the base. The wireframe
+      is locked; only the color treatment moves within the palette.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+    <div>
+      <h3 class="bb-sub">Horizontal lockup</h3>
+      <div class="bb-logo-grid">
+        <div class="bb-logo-card light">
+          <img src="./assets/careerchief-lockup.svg" alt="Lockup on light" height="40" />
+          <div class="bb-logo-meta">On off-white · default</div>
+        </div>
+        <div class="bb-logo-card dark">
+          <img src="./assets/careerchief-lockup-white.svg" alt="Lockup on navy" height="40" />
+          <div class="bb-logo-meta">On navy · inverted</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Logomark only</h3>
+      <div class="bb-logo-grid">
+        <div class="bb-logo-card slate">
+          <div style="display:flex; align-items:center; gap: 36px;">
+            <img src="./assets/careerchief-logomark.svg" alt="" height="56" />
+            <img src="./assets/careerchief-logomark.svg" alt="" height="36" />
+            <img src="./assets/careerchief-logomark.svg" alt="" height="22" />
+          </div>
+          <div class="bb-logo-meta">Mark at 56 / 36 / 22 px · gradient fill</div>
+        </div>
+        <div class="bb-logo-card dark">
+          <div style="display:flex; align-items:center; gap: 36px;">
+            <img src="./assets/careerchief-logomark-white.svg" alt="" height="56" />
+            <img src="./assets/careerchief-logomark-white.svg" alt="" height="36" />
+            <img src="./assets/careerchief-logomark-white.svg" alt="" height="22" />
+          </div>
+          <div class="bb-logo-meta">Mark on navy · white fill</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Usage rules</h3>
+      <ul class="bb-list">
+        <li>Use the full lockup as the primary brand expression — nav, headers, hero.</li>
+        <li>The mark alone is for product chrome and dense footers, once context is established.</li>
+        <li>Never recolor with gold — gold is reserved for achievement moments only.</li>
+        <li>Minimum size: 20px tall in product chrome, 14px in dense footers.</li>
+        <li>Maintain clear space equal to the height of the mark on all sides.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     03 · COLOR
+     ────────────────────────────────────────────────────────────── -->
+<section id="color" class="bb-container bb-section" data-screen-label="03 Color">
+  <div class="bb-section-head">
+    <div class="bb-section-num">03</div>
+    <h2>Color.</h2>
+    <p class="bb-section-lede">
+      A two-pole palette: <strong>Navy</strong> anchors authority,
+      <strong>Steel</strong> carries motion. Gold is reserved — it appears
+      only for achievement moments, and for the signature kicker rule.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+
+    <div>
+      <h3 class="bb-sub">Brand</h3>
+      <div class="bb-color-grid">
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#1A2F4A;">#1A2F4A</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Navy</div>
+            <div class="bb-swatch-role">Primary · CTAs · headlines · nav</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#0F1E30;">#0F1E30</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Navy Dark</div>
+            <div class="bb-swatch-role">Hover · dark surfaces</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#2A6C8E;">#2A6C8E</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Steel</div>
+            <div class="bb-swatch-role">Accent · links · secondary CTAs</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#6AB0CC;">#6AB0CC</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Steel Light</div>
+            <div class="bb-swatch-role">Progress · data viz · hover highlights</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#C4962A;">#C4962A</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Gold</div>
+            <div class="bb-swatch-role">Achievement only · scores · the kicker rule</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-light" style="background:#F6F9FB;">#F6F9FB</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Off-white</div>
+            <div class="bb-swatch-role">Page background · never pure white</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-light" style="background:#E8EEF4;">#E8EEF4</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Slate</div>
+            <div class="bb-swatch-role">Secondary surfaces · hover on light</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-light" style="background:#FFFFFF;">#FFFFFF</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">White</div>
+            <div class="bb-swatch-role">Card fill · paired with a hairline border</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Text &amp; borders</h3>
+      <div class="bb-color-grid">
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#1A2F4A;">#1A2F4A</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Text primary</div>
+            <div class="bb-swatch-role">Headlines · body emphasis</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#4A6480;">#4A6480</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Text secondary</div>
+            <div class="bb-swatch-role">Body copy · paragraph default</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-dark" style="background:#8AA0B4;">#8AA0B4</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Text muted</div>
+            <div class="bb-swatch-role">Eyebrows · captions · helper text</div>
+          </div>
+        </div>
+        <div class="bb-swatch">
+          <div class="bb-swatch-chip on-light" style="background:#E5EAF1; border:0.5px solid rgba(26,47,74,0.10);">rgba(26,47,74,0.10)</div>
+          <div class="bb-swatch-meta">
+            <div class="bb-swatch-name">Border</div>
+            <div class="bb-swatch-role">All borders derive from navy · never gray</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">On-dark (navy surface)</h3>
+      <div style="background: var(--color-navy); border-radius: var(--radius-md); padding: 32px;">
+        <div class="bb-color-grid">
+          <div class="bb-swatch" style="background: transparent; border-color: rgba(255,255,255,0.10);">
+            <div class="bb-swatch-chip" style="background: rgba(255,255,255,0.95); color: rgba(26,47,74,0.6);">rgba(255,255,255,0.95)</div>
+            <div class="bb-swatch-meta" style="background: rgba(255,255,255,0.04);">
+              <div class="bb-swatch-name" style="color: rgba(255,255,255,0.95);">On-dark primary</div>
+              <div class="bb-swatch-role" style="color: rgba(255,255,255,0.5);">Body emphasis on navy</div>
+            </div>
+          </div>
+          <div class="bb-swatch" style="background: transparent; border-color: rgba(255,255,255,0.10);">
+            <div class="bb-swatch-chip" style="background: rgba(255,255,255,0.50); color: rgba(26,47,74,0.65);">rgba(255,255,255,0.50)</div>
+            <div class="bb-swatch-meta" style="background: rgba(255,255,255,0.04);">
+              <div class="bb-swatch-name" style="color: rgba(255,255,255,0.95);">On-dark secondary</div>
+              <div class="bb-swatch-role" style="color: rgba(255,255,255,0.5);">Body copy on navy</div>
+            </div>
+          </div>
+          <div class="bb-swatch" style="background: transparent; border-color: rgba(255,255,255,0.10);">
+            <div class="bb-swatch-chip" style="background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.7);">rgba(255,255,255,0.07)</div>
+            <div class="bb-swatch-meta" style="background: rgba(255,255,255,0.04);">
+              <div class="bb-swatch-name" style="color: rgba(255,255,255,0.95);">On-dark surface</div>
+              <div class="bb-swatch-role" style="color: rgba(255,255,255,0.5);">Stat tile fill · sparingly</div>
+            </div>
+          </div>
+          <div class="bb-swatch" style="background: transparent; border-color: rgba(255,255,255,0.10);">
+            <div class="bb-swatch-chip" style="background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.7);">rgba(255,255,255,0.08)</div>
+            <div class="bb-swatch-meta" style="background: rgba(255,255,255,0.04);">
+              <div class="bb-swatch-name" style="color: rgba(255,255,255,0.95);">On-dark border</div>
+              <div class="bb-swatch-role" style="color: rgba(255,255,255,0.5);">Hairline on stat tiles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Navy tonal scale</h3>
+      <div class="bb-scale">
+        <div class="bb-scale-name">Navy</div>
+        <div class="bb-scale-step on-light" style="background:#F4F6F9;"><span class="step">50</span><span class="hex">#F4F6F9</span></div>
+        <div class="bb-scale-step on-light" style="background:#E2E8F0;"><span class="step">100</span><span class="hex">#E2E8F0</span></div>
+        <div class="bb-scale-step on-light" style="background:#C0CDD9;"><span class="step">200</span><span class="hex">#C0CDD9</span></div>
+        <div class="bb-scale-step on-light" style="background:#8FA3B7;"><span class="step">300</span><span class="hex">#8FA3B7</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#5E7B95;"><span class="step">400</span><span class="hex">#5E7B95</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#3E5874;"><span class="step">500</span><span class="hex">#3E5874</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#2A4262;"><span class="step">600</span><span class="hex">#2A4262</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#1A2F4A;"><span class="step">700 ★</span><span class="hex">#1A2F4A</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#0F1E30;"><span class="step">800</span><span class="hex">#0F1E30</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#091420;"><span class="step">900</span><span class="hex">#091420</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#050C14;"><span class="step">950</span><span class="hex">#050C14</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#020610;"><span class="step">1000</span><span class="hex">#020610</span></div>
+      </div>
+
+      <div class="bb-scale" style="margin-top: 24px;">
+        <div class="bb-scale-name">Steel</div>
+        <div class="bb-scale-step on-light" style="background:#F2F7FA;"><span class="step">50</span><span class="hex">#F2F7FA</span></div>
+        <div class="bb-scale-step on-light" style="background:#DCE9F0;"><span class="step">100</span><span class="hex">#DCE9F0</span></div>
+        <div class="bb-scale-step on-light" style="background:#B3D1DD;"><span class="step">200</span><span class="hex">#B3D1DD</span></div>
+        <div class="bb-scale-step on-light" style="background:#8BB8C9;"><span class="step">300</span><span class="hex">#8BB8C9</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#6AB0CC;"><span class="step">400 ★</span><span class="hex">#6AB0CC</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#4F8CA8;"><span class="step">500</span><span class="hex">#4F8CA8</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#2A6C8E;"><span class="step">600 ★</span><span class="hex">#2A6C8E</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#1F5675;"><span class="step">700</span><span class="hex">#1F5675</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#16425C;"><span class="step">800</span><span class="hex">#16425C</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#0E3145;"><span class="step">900</span><span class="hex">#0E3145</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#08222F;"><span class="step">950</span><span class="hex">#08222F</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#04131C;"><span class="step">1000</span><span class="hex">#04131C</span></div>
+      </div>
+
+      <div class="bb-scale" style="margin-top: 24px;">
+        <div class="bb-scale-name">Gold</div>
+        <div class="bb-scale-step on-light" style="background:#FBF8EE;"><span class="step">50</span><span class="hex">#FBF8EE</span></div>
+        <div class="bb-scale-step on-light" style="background:#F4EBC8;"><span class="step">100</span><span class="hex">#F4EBC8</span></div>
+        <div class="bb-scale-step on-light" style="background:#E9D78F;"><span class="step">200</span><span class="hex">#E9D78F</span></div>
+        <div class="bb-scale-step on-light" style="background:#DEC162;"><span class="step">300</span><span class="hex">#DEC162</span></div>
+        <div class="bb-scale-step on-light" style="background:#D2AC42;"><span class="step">400</span><span class="hex">#D2AC42</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#C4962A;"><span class="step">500 ★</span><span class="hex">#C4962A</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#A37C20;"><span class="step">600</span><span class="hex">#A37C20</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#8B6B1A;"><span class="step">700 ★</span><span class="hex">#8B6B1A</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#6E5413;"><span class="step">800</span><span class="hex">#6E5413</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#523E0E;"><span class="step">900</span><span class="hex">#523E0E</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#372908;"><span class="step">950</span><span class="hex">#372908</span></div>
+        <div class="bb-scale-step on-dark"  style="background:#1D1604;"><span class="step">1000</span><span class="hex">#1D1604</span></div>
+      </div>
+
+      <p class="bb-row-body" style="margin-top: 18px; font-size: 13px; color: var(--color-text-muted);">
+        ★ marks the brand token. Gold-700 carries the text variant on light backgrounds where 500 fails AA contrast.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Usage principles</h3>
+      <ul class="bb-list">
+        <li>Navy is the dominant structural color — nav, headlines, primary buttons, dark moments.</li>
+        <li>Steel is used confidently — links, secondary CTAs, accent fills, progress bars.</li>
+        <li>Gold is used scarcely — score numbers, milestone badges, and the 22 × 1.5px kicker rule.</li>
+        <li>Off-white is the default page background. Never pure white.</li>
+        <li>No gradients as primary backgrounds. The brand reads as solid and grounded.</li>
+        <li>All borders derive from navy at 10% — never neutral gray.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     04 · TYPE
+     ────────────────────────────────────────────────────────────── -->
+<section id="type" class="bb-container bb-section" data-screen-label="04 Type">
+  <div class="bb-section-head">
+    <div class="bb-section-num">04</div>
+    <h2>Typography.</h2>
+    <p class="bb-section-lede">
+      Two families, intentional contrast. DM Serif Display carries the
+      gravitas; Plus Jakarta Sans keeps the chrome quiet. The brand should
+      feel like it has room to breathe.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+
+    <div>
+      <div class="bb-type-specimen">
+        <div class="label">
+          <span>Display · DM Serif Display</span>
+          <span>·</span>
+          <span>400 / italic</span>
+          <span>·</span>
+          <span>72 / 1.02 / −0.028em</span>
+        </div>
+        <p class="bb-display-sample">Here&rsquo;s what you&rsquo;ve <em>built.</em></p>
+      </div>
+
+      <div class="bb-type-specimen">
+        <div class="label">
+          <span>H1</span><span>·</span><span>46 / 1.08</span>
+        </div>
+        <p class="bb-display-sample h1">Three roles you haven&rsquo;t told a story about <em>yet.</em></p>
+      </div>
+
+      <div class="bb-type-specimen">
+        <div class="label">
+          <span>H2</span><span>·</span><span>32 / 1.15</span>
+        </div>
+        <p class="bb-display-sample h2">A real thinking partner, not a content generator.</p>
+      </div>
+
+      <div class="bb-type-specimen">
+        <div class="label">
+          <span>H3</span><span>·</span><span>24 / 1.25</span>
+        </div>
+        <p class="bb-display-sample h3">Narrative clarity is the work.</p>
+      </div>
+
+      <div class="bb-type-specimen">
+        <div class="label">
+          <span>Body — Plus Jakarta Sans</span>
+          <span>·</span><span>400</span>
+          <span>·</span><span>17 / 1.70</span>
+        </div>
+        <p class="bb-body-sample">
+          CareerChief works alongside you, not on top of you. We surface
+          the gaps in your story so you can close them in your own words —
+          and we&rsquo;ll show up to every conversation having done the
+          reading. That&rsquo;s the job.
+        </p>
+      </div>
+
+      <div class="bb-type-specimen">
+        <div class="label">
+          <span>Kicker</span><span>·</span><span>Plus Jakarta 500</span><span>·</span><span>11 / 0.10em</span>
+        </div>
+        <span class="cc-kicker">Story snapshot</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Type scale</h3>
+      <table class="bb-scale-table">
+        <thead>
+          <tr><th>Token</th><th>Family</th><th>Size</th><th>Line</th><th>Used for</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="name">--fs-display</td><td>DM Serif Display</td><td class="mono">54px</td><td class="mono">1.02</td><td>Hero / display</td></tr>
+          <tr><td class="name">--fs-h1</td><td>DM Serif Display</td><td class="mono">46px</td><td class="mono">1.08</td><td>Page headlines</td></tr>
+          <tr><td class="name">--fs-h2</td><td>DM Serif Display</td><td class="mono">32px</td><td class="mono">1.15</td><td>Section headings</td></tr>
+          <tr><td class="name">--fs-h3</td><td>DM Serif Display</td><td class="mono">24px</td><td class="mono">1.25</td><td>Card titles</td></tr>
+          <tr><td class="name">--fs-body-lg</td><td>Plus Jakarta Sans</td><td class="mono">17px</td><td class="mono">1.70</td><td>Lede paragraphs</td></tr>
+          <tr><td class="name">--fs-body</td><td>Plus Jakarta Sans</td><td class="mono">15px</td><td class="mono">1.65</td><td>Default body</td></tr>
+          <tr><td class="name">--fs-body-sm</td><td>Plus Jakarta Sans</td><td class="mono">13px</td><td class="mono">1.60</td><td>Dense UI / hints</td></tr>
+          <tr><td class="name">--fs-label</td><td>Plus Jakarta Sans · 500</td><td class="mono">13px</td><td class="mono">1.40</td><td>Input labels</td></tr>
+          <tr><td class="name">--fs-eyebrow</td><td>Plus Jakarta Sans · 500</td><td class="mono">11px</td><td class="mono">+0.10em</td><td>Kicker / all caps</td></tr>
+          <tr><td class="name">--fs-caption</td><td>Plus Jakarta Sans</td><td class="mono">12px</td><td class="mono">1.45</td><td>Captions / meta</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Typographic principles</h3>
+      <ul class="bb-list">
+        <li>Headlines set in DM Serif Display, 400 weight. Italic for warmth — one italic word per headline, never two.</li>
+        <li>Body copy in Plus Jakarta Sans, generous line height (1.65 — 1.70).</li>
+        <li>Sentence case everywhere — the kicker eyebrow is the only place uppercase appears.</li>
+        <li>Letter-spacing on display sizes is tight (−0.024em); body stays at default.</li>
+        <li>Never use the display serif below 22px — it loses its character.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     05 · SPACING
+     ────────────────────────────────────────────────────────────── -->
+<section id="spacing" class="bb-container bb-section" data-screen-label="05 Spacing">
+  <div class="bb-section-head">
+    <div class="bb-section-num">05</div>
+    <h2>Spacing &amp; radius.</h2>
+    <p class="bb-section-lede">
+      A hard 4px base unit. Sections breathe — 48px is the floor between
+      blocks; hero padding goes to 72px. Corners follow a measured ladder
+      from 6 to fully rounded. Sharp 90° corners do not appear.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+
+    <div>
+      <h3 class="bb-sub">Spacing scale</h3>
+      <div class="bb-spacing-grid">
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:4px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">4</div><div class="bb-spacing-token">--space-1</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:8px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">8</div><div class="bb-spacing-token">--space-2</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:12px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">12</div><div class="bb-spacing-token">--space-3</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:16px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">16</div><div class="bb-spacing-token">--space-4</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:20px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">20</div><div class="bb-spacing-token">--space-5</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:24px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">24</div><div class="bb-spacing-token">--space-6</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:32px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">32</div><div class="bb-spacing-token">--space-7</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:48px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">48</div><div class="bb-spacing-token">--space-8</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:64px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">64</div><div class="bb-spacing-token">--space-9</div></div></div>
+        <div class="bb-spacing-item"><div class="bb-spacing-box"><div class="bb-spacing-fill" style="height:72px;"></div></div><div class="bb-spacing-meta"><div class="bb-spacing-px">72</div><div class="bb-spacing-token">--space-10</div></div></div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Corner radii</h3>
+      <div class="bb-radii">
+        <div class="bb-radius-item r6">
+          <div class="bb-radius-px">6</div>
+          <div class="bb-radius-token">--radius-sm</div>
+        </div>
+        <div class="bb-radius-item r8">
+          <div class="bb-radius-px">8</div>
+          <div class="bb-radius-token">--radius-md</div>
+        </div>
+        <div class="bb-radius-item r12">
+          <div class="bb-radius-px">12</div>
+          <div class="bb-radius-token">--radius-lg</div>
+        </div>
+        <div class="bb-radius-item r16">
+          <div class="bb-radius-px">16</div>
+          <div class="bb-radius-token">--radius-xl</div>
+        </div>
+        <div class="bb-radius-item r18">
+          <div class="bb-radius-px">18</div>
+          <div class="bb-radius-token">--radius-2xl</div>
+        </div>
+        <div class="bb-radius-item rfull">
+          <div class="bb-radius-px">∞</div>
+          <div class="bb-radius-token">--radius-full</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Layout rules</h3>
+      <ul class="bb-list">
+        <li>Hero padding tops out at 72px. Section blocks are at least 48px apart.</li>
+        <li>Card padding sits at 24 — 32px. Inner stat tiles use 14 — 16px.</li>
+        <li>Single-column hero, max content width 1200px, comfortable side margins (≥56px desktop).</li>
+        <li>Two-column splits favor 60 / 40 content/imagery — never 50 / 50.</li>
+        <li>Sticky top nav 64px tall, off-white at 85% opacity with 12px backdrop blur.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     06 · ELEVATION
+     ────────────────────────────────────────────────────────────── -->
+<section id="elevation" class="bb-container bb-section" data-screen-label="06 Elevation">
+  <div class="bb-section-head">
+    <div class="bb-section-num">06</div>
+    <h2>Elevation &amp; motion.</h2>
+    <p class="bb-section-lede">
+      Four shadows, all tinted with navy — never neutral gray — so they
+      feel of-a-piece with the palette. Motion is confident and settled.
+      No bounce, no overshoot.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+
+    <div>
+      <h3 class="bb-sub">Shadow scale</h3>
+      <div class="bb-shadows">
+        <div class="bb-shadow-tile xs">
+          <div class="bb-shadow-name">Shadow xs</div>
+          <div class="bb-shadow-token">0 1px 4px rgba(26,47,74,0.06)</div>
+        </div>
+        <div class="bb-shadow-tile sm">
+          <div class="bb-shadow-name">Shadow sm</div>
+          <div class="bb-shadow-token">0 2px 8px rgba(26,47,74,0.08)</div>
+        </div>
+        <div class="bb-shadow-tile md">
+          <div class="bb-shadow-name">Shadow md</div>
+          <div class="bb-shadow-token">0 4px 16px rgba(26,47,74,0.10)</div>
+        </div>
+        <div class="bb-shadow-tile lg">
+          <div class="bb-shadow-name">Shadow lg</div>
+          <div class="bb-shadow-token">0 8px 32px rgba(26,47,74,0.12)</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Motion durations</h3>
+      <table class="bb-scale-table">
+        <thead><tr><th>Token</th><th>Duration</th><th>Easing</th><th>Used for</th></tr></thead>
+        <tbody>
+          <tr><td class="name">--t-fast</td><td class="mono">150ms</td><td class="mono">ease</td><td>Hover states · button fills</td></tr>
+          <tr><td class="name">--t-mid</td><td class="mono">250ms</td><td class="mono">ease</td><td>Panel transitions · reveals</td></tr>
+          <tr><td class="name">--t-slow</td><td class="mono">400ms</td><td class="mono">ease</td><td>Page transitions · score animations</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Motion principles</h3>
+      <ul class="bb-list">
+        <li>All easings are plain <code>ease</code>. Spring or overshoot curves are off-limits.</li>
+        <li>Buttons darken or fill on hover. No scale-down transforms — the brand should not feel toy-like.</li>
+        <li>Cards lift via shadow step-up (sm → md). No <code>translateY</code>.</li>
+        <li>Modal backdrops are flat (no blur). Sticky headers use 12px backdrop blur at 85% opacity.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     07 · COMPONENTS
+     ────────────────────────────────────────────────────────────── -->
+<section id="components" class="bb-container bb-section" data-screen-label="07 Components">
+  <div class="bb-section-head">
+    <div class="bb-section-num">07</div>
+    <h2>Component library.</h2>
+    <p class="bb-section-lede">
+      A small, opinionated kit. Each component honors the visual principles:
+      hairlines instead of heavy borders, color shifts instead of motion,
+      Navy for structure and Gold for the rare achievement moment.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+
+    <!-- Kicker -->
+    <div>
+      <h3 class="bb-sub">The signature kicker</h3>
+      <div class="bb-frame">
+        <div style="display:flex; flex-direction:column; gap: 16px; padding: 12px 0;">
+          <span class="cc-kicker">Story snapshot</span>
+          <span class="cc-kicker">How it works</span>
+          <span class="cc-kicker">For the honest moments</span>
+        </div>
+      </div>
+      <p class="bb-frame-caption">22 × 1.5px gold rule · Plus Jakarta 500 · 11px · 0.10em tracking · ALL CAPS</p>
+    </div>
+
+    <!-- Buttons -->
+    <div>
+      <h3 class="bb-sub">Buttons</h3>
+      <div class="bb-frame">
+        <button class="bb-btn bb-btn-primary">Review my story</button>
+        <button class="bb-btn bb-btn-secondary">Skip for now</button>
+        <button class="bb-btn bb-btn-accent">Continue</button>
+        <button class="bb-btn bb-btn-ghost">Cancel</button>
+      </div>
+      <div class="bb-frame dark" style="margin-top: 12px;">
+        <button class="bb-btn bb-btn-inverse">Get started</button>
+        <button class="bb-btn bb-btn-ghost bb-btn-ghost-dark">Learn more</button>
+      </div>
+      <p class="bb-frame-caption">13px padding-y · 24px padding-x · 8px radius · Plus Jakarta 500 · 14px</p>
+    </div>
+
+    <!-- Inputs -->
+    <div>
+      <h3 class="bb-sub">Form fields</h3>
+      <div class="bb-frame">
+        <div class="bb-field">
+          <label>Current role</label>
+          <input type="text" value="Senior Product Manager" />
+          <div class="hint">Used to anchor your story.</div>
+        </div>
+        <div class="bb-field">
+          <label>Years of experience</label>
+          <input type="text" placeholder="e.g. 7" />
+          <div class="hint">Used for percentile context.</div>
+        </div>
+        <div class="bb-field" style="flex-basis: 100%;">
+          <label>What you&rsquo;re best at</label>
+          <textarea rows="2" placeholder="One sentence — no resume copy">Turning ambiguous early-stage problems into shipped product.</textarea>
+        </div>
+      </div>
+      <p class="bb-frame-caption">10 × 14px padding · 1px navy-tinted border · focus → steel border · no glow ring</p>
+    </div>
+
+    <!-- Cards -->
+    <div>
+      <h3 class="bb-sub">Cards — light &amp; dark</h3>
+      <div class="bb-card-pair">
+        <div class="bb-light-card">
+          <span class="cc-kicker">Story snapshot</span>
+          <div class="bb-card-title">Three roles you haven&rsquo;t told a story about yet.</div>
+          <div class="bb-card-body">
+            Light card. White fill, 0.5px navy-tinted hairline, 16px radius, shadow-sm.
+            The default surface across the product.
+          </div>
+        </div>
+        <div class="bb-dark-card">
+          <span class="kicker-dark">Career brief</span>
+          <div class="bb-card-title" style="color: var(--color-on-dark-primary);">Here&rsquo;s how to say it.</div>
+          <div class="bb-card-body">Dark card. Navy fill, no border, 18px radius. Stat tiles use white at 7% with a hairline border.</div>
+          <div class="bb-stat-row">
+            <div class="bb-stat-tile">
+              <div class="bb-stat-num gold">87</div>
+              <div class="bb-stat-label">Story score</div>
+            </div>
+            <div class="bb-stat-tile">
+              <div class="bb-stat-num white">3</div>
+              <div class="bb-stat-label">Gaps to close</div>
+            </div>
+            <div class="bb-stat-tile">
+              <div class="bb-stat-num white">+12</div>
+              <div class="bb-stat-label">This week</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Badges -->
+    <div>
+      <h3 class="bb-sub">Badges</h3>
+      <div class="bb-frame">
+        <span class="bb-badge gold">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14.1 18.2 21 12 17.8 5.8 21 7 14.1 2 9.3 9 8.5 12 2"/></svg>
+          Top 12%
+        </span>
+        <span class="bb-badge steel">Recommended</span>
+        <span class="bb-badge slate">Senior PM</span>
+        <span class="bb-badge outline">Draft</span>
+      </div>
+      <p class="bb-frame-caption">24px pill height · 12px label · gold reserved for achievement state only</p>
+    </div>
+
+    <!-- Progress -->
+    <div>
+      <h3 class="bb-sub">Progress</h3>
+      <div class="bb-frame" style="flex-direction:column; align-items: stretch; gap: 24px;">
+        <div class="bb-progress">
+          <div class="bb-progress-head"><span>Narrative clarity</span><span>91%</span></div>
+          <div class="bb-progress-track"><div class="bb-progress-fill" style="width:91%;"></div></div>
+        </div>
+        <div class="bb-progress">
+          <div class="bb-progress-head"><span>Impact quantification</span><span>62%</span></div>
+          <div class="bb-progress-track"><div class="bb-progress-fill gold" style="width:62%;"></div></div>
+        </div>
+        <div class="bb-progress">
+          <div class="bb-progress-head"><span>Role match — Series B PM</span><span>78%</span></div>
+          <div class="bb-progress-track"><div class="bb-progress-fill" style="width:78%;"></div></div>
+        </div>
+      </div>
+      <p class="bb-frame-caption">4px track · steel-light by default · gold fill flags an outlier worth attention</p>
+    </div>
+
+    <!-- Step list -->
+    <div>
+      <h3 class="bb-sub">Numbered steps</h3>
+      <div class="bb-frame">
+        <div class="bb-steps" style="width: 100%;">
+          <div>
+            <div class="bb-step-num">01</div>
+            <div class="bb-step-title">Map.</div>
+            <div class="bb-step-body">Walk through every role you&rsquo;ve held — what you actually did, not what the title said.</div>
+          </div>
+          <div>
+            <div class="bb-step-num">02</div>
+            <div class="bb-step-title">Surface.</div>
+            <div class="bb-step-body">We flag the gaps in your story and the moments worth telling more clearly.</div>
+          </div>
+          <div>
+            <div class="bb-step-num">03</div>
+            <div class="bb-step-title">Sharpen.</div>
+            <div class="bb-step-body">Together we sharpen the bullets that matter — your words, our edits.</div>
+          </div>
+          <div>
+            <div class="bb-step-num">04</div>
+            <div class="bb-step-title">Rehearse.</div>
+            <div class="bb-step-body">Practice the conversations before they happen, against real role criteria.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iconography -->
+    <div>
+      <h3 class="bb-sub">Iconography — Lucide</h3>
+      <div class="bb-frame">
+        <div class="bb-icons" style="width:100%;">
+          <div class="bb-icon-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+            <span class="name">book</span>
+          </div>
+          <div class="bb-icon-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span class="name">search</span>
+          </div>
+          <div class="bb-icon-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M12 22v-6"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 14.83 4.24 4.24"/><circle cx="12" cy="12" r="4"/></svg>
+            <span class="name">target</span>
+          </div>
+          <div class="bb-icon-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6l3-9 6 18 3-9h3"/></svg>
+            <span class="name">pulse</span>
+          </div>
+          <div class="bb-icon-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/></svg>
+            <span class="name">check</span>
+          </div>
+          <div class="bb-icon-cell">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span class="name">conversation</span>
+          </div>
+        </div>
+      </div>
+      <p class="bb-frame-caption">Lucide · 1.5px stroke · inherits text color · 16 / 20 / 24px</p>
+    </div>
+
+    <!-- Inline link -->
+    <div>
+      <h3 class="bb-sub">Inline link</h3>
+      <div class="bb-frame">
+        <p style="font-size: 16px; line-height: 1.7; color: var(--color-text-secondary); margin: 0; max-width: 60ch;">
+          The product refers to itself sparingly — &ldquo;I&rsquo;ll surface the gaps&rdquo; is fine.
+          Read the <a href="#tokens">design tokens</a> for the full set, or
+          browse the <a href="#components">component kit</a> above.
+        </p>
+      </div>
+      <p class="bb-frame-caption">Steel underlined at default · hover fades to navy · no other treatments</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     08 · PRINCIPLES
+     ────────────────────────────────────────────────────────────── -->
+<section id="principles" class="bb-container bb-section" data-screen-label="08 Principles">
+  <div class="bb-section-head">
+    <div class="bb-section-num">08</div>
+    <h2>Visual principles.</h2>
+    <p class="bb-section-lede">
+      The brand reads as solid and grounded. Where most career tools lean
+      bright and toy-like, CareerChief leans editorial — quiet, considered,
+      adult.
+    </p>
+  </div>
+
+  <div class="bb-stack-lg">
+
+    <div>
+      <h3 class="bb-sub">Voice — yes &amp; no</h3>
+      <div class="bb-do-dont">
+        <div class="bb-do">
+          <span class="mk">Yes</span>
+          &ldquo;Three roles you haven&rsquo;t told a story about yet.&rdquo;<br />
+          &ldquo;I noticed a gap between your 2021 PM role and the strategy work you described — want to talk through it?&rdquo;<br />
+          Button: &ldquo;Review my story&rdquo;
+        </div>
+        <div class="bb-dont">
+          <span class="mk">No</span>
+          &ldquo;🚀 Unlock your career potential with AI!&rdquo;<br />
+          &ldquo;Our AI detected a discrepancy in your timeline. Click to optimize.&rdquo;<br />
+          Button: &ldquo;GET STARTED NOW&rdquo;
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">What to avoid</h3>
+      <ul class="bb-list">
+        <li>Gradient backgrounds as primary surfaces — the brand is solid, not iridescent.</li>
+        <li>Emoji in product UI or marketing copy. Bullets (•) and arrows (→) are the ceiling.</li>
+        <li>Pure white. The page background is always off-white.</li>
+        <li>2019 SaaS verbs — &ldquo;unlock,&rdquo; &ldquo;supercharge,&rdquo; &ldquo;elevate,&rdquo; &ldquo;transform.&rdquo;</li>
+        <li>Leaning on &ldquo;AI&rdquo; as a noun in marketing. Name what the feature actually does.</li>
+        <li>Glassmorphism. Noise overlays. Inner shadows. Heavy drop shadows.</li>
+        <li>Bounce, spring, or overshoot motion. The brand should not feel toy-like.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="bb-sub">Imagery</h3>
+      <ul class="bb-list">
+        <li>Photography appears sparingly. When it does: full-bleed, cool-toned, lightly desaturated — editorial, not stock.</li>
+        <li>No background images by default. The signature texture is negative space.</li>
+        <li>No repeating patterns or decorative textures.</li>
+        <li>No hand-drawn illustrations or sticker-style decoration.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     09 · TOKENS
+     ────────────────────────────────────────────────────────────── -->
+<section id="tokens" class="bb-container bb-section" data-screen-label="09 Tokens">
+  <div class="bb-section-head">
+    <div class="bb-section-num">09</div>
+    <h2>Design tokens.</h2>
+    <p class="bb-section-lede">
+      Copy these CSS variables into any project to instantiate the
+      CareerChief design system. All components in the kit reference
+      these tokens — never hardcoded values.
+    </p>
+  </div>
+
+  <div class="bb-tokens">
+<pre><span class="tk-comment">/* CareerChief — Design Tokens */
+/* careerchief.com · v1.0 · 2026 */</span>
+
+:root {
+  <span class="tk-comment">/* Color — brand */</span>
+  <span class="tk-var">--color-navy</span>:         <span class="tk-val">#1A2F4A</span>;  <span class="tk-comment">/* Primary · CTAs · headlines       */</span>
+  <span class="tk-var">--color-navy-dark</span>:    <span class="tk-val">#0F1E30</span>;  <span class="tk-comment">/* Hover · dark surfaces            */</span>
+  <span class="tk-var">--color-steel</span>:        <span class="tk-val">#2A6C8E</span>;  <span class="tk-comment">/* Accent · links · secondary CTAs  */</span>
+  <span class="tk-var">--color-steel-light</span>:  <span class="tk-val">#6AB0CC</span>;  <span class="tk-comment">/* Progress · data viz · highlights */</span>
+  <span class="tk-var">--color-gold</span>:         <span class="tk-val">#C4962A</span>;  <span class="tk-comment">/* Achievement only                 */</span>
+  <span class="tk-var">--color-gold-text</span>:    <span class="tk-val">#8B6B1A</span>;  <span class="tk-comment">/* Gold badge text · AA on light    */</span>
+
+  <span class="tk-comment">/* Color — surface */</span>
+  <span class="tk-var">--color-off-white</span>:    <span class="tk-val">#F6F9FB</span>;  <span class="tk-comment">/* Page background · never white    */</span>
+  <span class="tk-var">--color-slate</span>:        <span class="tk-val">#E8EEF4</span>;  <span class="tk-comment">/* Secondary surfaces               */</span>
+  <span class="tk-var">--color-white</span>:        <span class="tk-val">#FFFFFF</span>;  <span class="tk-comment">/* Card fill — with a hairline      */</span>
+
+  <span class="tk-comment">/* Color — text */</span>
+  <span class="tk-var">--color-text-primary</span>:    <span class="tk-val">#1A2F4A</span>;
+  <span class="tk-var">--color-text-secondary</span>:  <span class="tk-val">#4A6480</span>;
+  <span class="tk-var">--color-text-muted</span>:      <span class="tk-val">#8AA0B4</span>;
+
+  <span class="tk-comment">/* Color — borders */</span>
+  <span class="tk-var">--color-border</span>:         <span class="tk-val">rgba(26, 47, 74, 0.10)</span>;
+  <span class="tk-var">--color-border-strong</span>:  <span class="tk-val">rgba(26, 47, 74, 0.18)</span>;
+
+  <span class="tk-comment">/* Typography */</span>
+  <span class="tk-var">--font-display</span>:  <span class="tk-val">"DM Serif Display"</span>, Georgia, serif;
+  <span class="tk-var">--font-sans</span>:     <span class="tk-val">"Plus Jakarta Sans"</span>, system-ui, sans-serif;
+  <span class="tk-var">--font-mono</span>:     <span class="tk-val">"JetBrains Mono"</span>, ui-monospace, monospace;
+
+  <span class="tk-comment">/* Spacing — 4px base */</span>
+  <span class="tk-var">--space-1</span>:   <span class="tk-val">4px</span>;
+  <span class="tk-var">--space-2</span>:   <span class="tk-val">8px</span>;
+  <span class="tk-var">--space-3</span>:   <span class="tk-val">12px</span>;
+  <span class="tk-var">--space-4</span>:   <span class="tk-val">16px</span>;
+  <span class="tk-var">--space-5</span>:   <span class="tk-val">20px</span>;
+  <span class="tk-var">--space-6</span>:   <span class="tk-val">24px</span>;
+  <span class="tk-var">--space-7</span>:   <span class="tk-val">32px</span>;
+  <span class="tk-var">--space-8</span>:   <span class="tk-val">48px</span>;
+  <span class="tk-var">--space-9</span>:   <span class="tk-val">64px</span>;
+  <span class="tk-var">--space-10</span>:  <span class="tk-val">72px</span>;
+
+  <span class="tk-comment">/* Radii */</span>
+  <span class="tk-var">--radius-sm</span>:    <span class="tk-val">6px</span>;
+  <span class="tk-var">--radius-md</span>:    <span class="tk-val">8px</span>;
+  <span class="tk-var">--radius-lg</span>:    <span class="tk-val">12px</span>;
+  <span class="tk-var">--radius-xl</span>:    <span class="tk-val">16px</span>;
+  <span class="tk-var">--radius-2xl</span>:   <span class="tk-val">18px</span>;
+  <span class="tk-var">--radius-full</span>:  <span class="tk-val">9999px</span>;
+
+  <span class="tk-comment">/* Shadows · navy-tinted */</span>
+  <span class="tk-var">--shadow-xs</span>: <span class="tk-val">0 1px 4px  rgba(26,47,74,0.06)</span>;
+  <span class="tk-var">--shadow-sm</span>: <span class="tk-val">0 2px 8px  rgba(26,47,74,0.08)</span>;
+  <span class="tk-var">--shadow-md</span>: <span class="tk-val">0 4px 16px rgba(26,47,74,0.10)</span>;
+  <span class="tk-var">--shadow-lg</span>: <span class="tk-val">0 8px 32px rgba(26,47,74,0.12)</span>;
+
+  <span class="tk-comment">/* Motion */</span>
+  <span class="tk-var">--t-fast</span>:  <span class="tk-val">0.15s ease</span>;
+  <span class="tk-var">--t-mid</span>:   <span class="tk-val">0.25s ease</span>;
+  <span class="tk-var">--t-slow</span>:  <span class="tk-val">0.40s ease</span>;
+}</pre>
+  </div>
+
+  <p class="bb-row-body" style="margin-top: 24px; font-size: 13px; color: var(--color-text-muted);">
+    Live token source: <code style="font-family: var(--font-mono); color: var(--color-steel);">styles/colors_and_type.css</code>.
+  </p>
+</section>
+
+<!-- ──────────────────────────────────────────────────────────────
+     FOOTER
+     ────────────────────────────────────────────────────────────── -->
+<footer class="bb-container bb-footer">
+  <div class="bb-footer-mark">
+    <img src="./assets/careerchief-lockup.svg" alt="CareerChief" />
+  </div>
+  <div class="bb-footer-meta">
+    CareerChief · Brand book &amp; design system · v1.0 · 2026
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var details = document.getElementById('bbNavSelect');
+    if (!details) return;
+    var label = details.querySelector('[data-current]');
+    var menu  = details.querySelector('.bb-nav-select-menu');
+
+    var sections = [
+      ['foundation', 'Foundation'],
+      ['logomark',   'Logomark'],
+      ['color',      'Color'],
+      ['type',       'Type'],
+      ['spacing',    'Spacing'],
+      ['elevation',  'Elevation'],
+      ['components', 'Components'],
+      ['principles', 'Principles'],
+      ['tokens',     'Tokens']
+    ];
+
+    // Close dropdown when a menu item is selected.
+    menu.addEventListener('click', function(e) {
+      var a = e.target.closest('a');
+      if (a) details.open = false;
+    });
+    // Close on outside click.
+    document.addEventListener('click', function(e) {
+      if (details.open && !details.contains(e.target)) details.open = false;
+    });
+
+    var current = null;
+    function setCurrent(id) {
+      if (id === current) return;
+      current = id;
+      var entry = sections.find(function(s) { return s[0] === id; });
+      if (entry) label.textContent = entry[1];
+      menu.querySelectorAll('a').forEach(function(a) {
+        a.classList.toggle('is-active', a.dataset.target === id);
+      });
+    }
+
+    // Switch when a section's top reaches ~30% of the viewport — gives the
+    // current section room to "own" the screen and keeps direction symmetric.
+    function update() {
+      var nav = document.querySelector('.bb-nav');
+      var navH = nav ? nav.getBoundingClientRect().height : 56;
+      var threshold = navH + Math.max(120, window.innerHeight * 0.30);
+      var active = sections[0][0];
+      for (var i = 0; i < sections.length; i++) {
+        var el = document.getElementById(sections[i][0]);
+        if (!el) continue;
+        var top = el.getBoundingClientRect().top;
+        if (top - threshold <= 0) {
+          active = sections[i][0];
+        } else {
+          break;
+        }
+      }
+      setCurrent(active);
+    }
+
+    var ticking = false;
+    function onScroll() {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function() { update(); ticking = false; });
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    update();
+  })();
+</script>
+
+</body>
+</html>
