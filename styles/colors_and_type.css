@@ -1,0 +1,227 @@
+/* CareerChief Design System — foundations
+ * Color + Type tokens, plus semantic styles for h1/h2/p/etc.
+ * Import this once in the document head; classes/vars below are
+ * authored to read like the spec in uploads/careercheif-design-system.md.
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  /* ---------- Color: brand ---------- */
+  --color-navy:        #1A2F4A;  /* primary, CTAs, headlines, nav */
+  --color-navy-dark:   #0F1E30;  /* hover, dark surfaces */
+  --color-steel:       #2A6C8E;  /* accent, links, secondary CTAs */
+  --color-steel-light: #6AB0CC;  /* data viz, progress, highlights */
+  --color-gold:        #C4962A;  /* achievement moments only */
+  --color-gold-text:   #8B6B1A;  /* gold badge text */
+  --color-gold-bg:     rgba(196, 150, 42, 0.10);
+
+  /* ---------- Color: surface ---------- */
+  --color-off-white:   #F6F9FB;  /* page background */
+  --color-slate:       #E8EEF4;  /* card surfaces, secondary bg */
+  --color-white:       #FFFFFF;
+
+  /* ---------- Color: text ---------- */
+  --color-text-primary:   #1A2F4A;
+  --color-text-secondary: #4A6480;
+  --color-text-muted:     #8AA0B4;
+
+  /* ---------- Color: borders / dividers ---------- */
+  --color-border:        rgba(26, 47, 74, 0.10);
+  --color-border-strong: rgba(26, 47, 74, 0.18);
+
+  /* ---------- Color: on-dark (navy surface) ---------- */
+  --color-on-dark-primary:   rgba(255, 255, 255, 0.95);
+  --color-on-dark-secondary: rgba(255, 255, 255, 0.50);
+  --color-on-dark-muted:     rgba(255, 255, 255, 0.35);
+  --color-on-dark-surface:   rgba(255, 255, 255, 0.07);
+  --color-on-dark-border:    rgba(255, 255, 255, 0.08);
+
+  /* ---------- Type: families ---------- */
+  --font-display: "DM Serif Display", "Source Serif Pro", Georgia, serif;
+  --font-sans:    "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ---------- Type: sizes (display) ---------- */
+  --fs-display:    54px;
+  --fs-h1:         46px;
+  --fs-h2:         32px;
+  --fs-h3:         24px;
+  --fs-body-lg:    17px;
+  --fs-body:       15px;
+  --fs-body-sm:    13px;
+  --fs-label:      13px;
+  --fs-eyebrow:    11px;
+  --fs-caption:    12px;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-7:  32px;
+  --space-8:  48px;
+  --space-9:  64px;
+  --space-10: 72px;
+
+  /* ---------- Radius ---------- */
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  18px;
+  --radius-full: 9999px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-xs: 0 1px 4px rgba(26, 47, 74, 0.06);
+  --shadow-sm: 0 2px 8px rgba(26, 47, 74, 0.08);
+  --shadow-md: 0 4px 16px rgba(26, 47, 74, 0.10);
+  --shadow-lg: 0 8px 32px rgba(26, 47, 74, 0.12);
+
+  /* ---------- Motion ---------- */
+  --t-fast: 0.15s ease;
+  --t-mid:  0.25s ease;
+  --t-slow: 0.40s ease;
+}
+
+/* ============================================================
+ * Semantic element styles
+ * ============================================================ */
+
+html, body {
+  background: var(--color-off-white);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .cc-h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h1);
+  line-height: 1.08;
+  letter-spacing: -0.024em;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+h2, .cc-h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h2);
+  line-height: 1.15;
+  letter-spacing: -0.024em;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+h3, .cc-h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: var(--fs-h3);
+  line-height: 1.25;
+  letter-spacing: -0.024em;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+p, .cc-body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.cc-body-lg {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body-lg);
+  line-height: 1.70;
+  color: var(--color-text-secondary);
+}
+
+.cc-body-sm {
+  font-size: var(--fs-body-sm);
+  line-height: 1.60;
+  color: var(--color-text-secondary);
+}
+
+.cc-label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--color-text-primary);
+}
+
+.cc-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.cc-caption {
+  font-size: var(--fs-caption);
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
+code, pre, .cc-mono {
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+a, .cc-link {
+  color: var(--color-steel);
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+a:hover, .cc-link:hover {
+  color: var(--color-navy);
+}
+
+/* ============================================================
+ * The signature "kicker" — gold rule + uppercase label.
+ * Recurring motif used to open sections.
+ * ============================================================ */
+.cc-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.cc-kicker::before {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--color-gold);
+  border-radius: 1px;
+}
+
+/* Dark surface variant — used inside navy cards */
+.cc-on-dark {
+  color: var(--color-on-dark-primary);
+}
+.cc-on-dark p,
+.cc-on-dark .cc-body {
+  color: var(--color-on-dark-secondary);
+}
+.cc-on-dark .cc-eyebrow,
+.cc-on-dark .cc-kicker {
+  color: var(--color-on-dark-muted);
+}

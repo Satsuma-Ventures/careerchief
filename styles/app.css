@@ -1,0 +1,179 @@
+/* CareerChief App UI Kit — shared styles */
+@import url("./colors_and_type.css");
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  height: 100%;
+  background: var(--color-off-white);
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 224px 1fr;
+  min-height: 100vh;
+  min-width: 1200px;
+}
+
+/* ────────── Sidebar ────────── */
+.app-side {
+  background: #fff;
+  border-right: 0.5px solid var(--color-border);
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+.app-side-brand { display: flex; align-items: center; gap: 10px; padding: 4px 8px; }
+.app-side-section { display: flex; flex-direction: column; gap: 2px; }
+.app-side-eyebrow {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  padding: 0 10px 4px;
+}
+.app-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 8px 10px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast);
+  border: 0;
+  background: transparent;
+  text-align: left;
+}
+.app-nav-item:hover { color: var(--color-text-primary); background: var(--color-slate); }
+.app-nav-item.active {
+  background: var(--color-slate);
+  color: var(--color-navy);
+}
+.app-nav-item svg { color: currentColor; flex-shrink: 0; }
+.app-nav-item .count {
+  margin-left: auto;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.app-side-user {
+  margin-top: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 0.5px solid var(--color-border);
+}
+.app-avatar {
+  width: 30px; height: 30px;
+  border-radius: 9999px;
+  background: var(--color-steel);
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ────────── Main area ────────── */
+.app-main {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  min-height: 100vh;
+}
+.app-content {
+  padding: 28px 32px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-width: 0;
+}
+.app-aside {
+  background: #fff;
+  border-left: 0.5px solid var(--color-border);
+  padding: 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ────────── Page header ────────── */
+.app-page-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+.app-page-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 1.15;
+  color: var(--color-navy);
+  font-weight: 400;
+}
+.app-page-sub {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* ────────── Cards ────────── */
+.app-card {
+  background: #fff;
+  border: 0.5px solid var(--color-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow-sm);
+}
+.app-card-dark {
+  background: var(--color-navy);
+  border-radius: 18px;
+  padding: 24px;
+  color: rgba(255,255,255,0.95);
+}
+
+/* ────────── Buttons ────────── */
+.app-btn {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  transition: background var(--t-fast), color var(--t-fast), opacity var(--t-fast);
+}
+.app-btn-primary { background: var(--color-navy); color: #fff; }
+.app-btn-primary:hover { background: var(--color-navy-dark); }
+.app-btn-secondary {
+  background: transparent;
+  color: var(--color-navy);
+  border: 1px solid var(--color-navy);
+}
+.app-btn-secondary:hover { background: var(--color-slate); }
+.app-btn-inverse { background: #fff; color: var(--color-navy); font-weight: 600; }
+.app-btn-inverse:hover { opacity: 0.92; }
+
+/* Pills + tags */
+.app-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.app-tag-navy { background: rgba(26,47,74,0.08); color: var(--color-navy); }
+.app-tag-steel { background: rgba(42,108,142,0.12); color: var(--color-steel); }
+.app-tag-gold { background: rgba(196,150,42,0.10); color: #8B6B1A; }
