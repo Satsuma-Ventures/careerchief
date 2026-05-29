@@ -27,7 +27,7 @@ function Logomark({ size = 28, variant = "color" }) {
 
 function Lockup({ height = 22, variant = "color" }) {
   // variant: "color" (default), "mono" (single navy), "white" (for dark bg)
-  let src = "./assets/careerchief-lockup.svg";
+  let src = "./assets/careerchief-lockup-sm.svg";
   if (variant === "mono") src = "./assets/careerchief-lockup-mono.svg";
   if (variant === "white") src = "./assets/careerchief-lockup-white.svg";
   return (
