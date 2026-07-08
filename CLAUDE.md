@@ -39,7 +39,7 @@ This file is read by Claude Code at the start of every session. It provides full
 
 ## Current phase skill
 
-**Active skill:** `skills/[track-folder]/[skill-file].md`
+**Active skill:** `skills/1-plant/2-thesis.md`
 *(Updated by venture.md at each phase transition. Current skill is copied from the studio repo into this venture's skills/ folder at phase start.)*
 
 ---
