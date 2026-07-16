@@ -26,6 +26,17 @@ Actively avoid the SaaS defaults that will creep in — especially on the landin
 
 When a layout decision defaults to "the SaaS way," choose the **editorial** way instead.
 
+## Voice & positioning — lead with the product and the user's agency, not "AI"
+
+Meritous uses AI, and we're transparent about it — but we **never lead with it**, and we **never frame it as something done *to* the user.** The hero of every screen is the *user* and what they're taking control of; the product is the partner that empowers them. This follows the studio's AI-empowerment thesis: our users often arrive anxious about AI (afraid it makes them replaceable or generic), and Meritous should be their first *positive* AI experience — turning AI-anxiety into agency.
+
+- **Lead with the product and the outcome, not the technology.** Never "AI career tool" or "AI-powered résumé builder." Lead with the user's transformation and the product.
+- **"Take control."** The emotional core is *agency* — the user taking control of their own story, their value, and their next move. AI is the force-multiplier that hands them the pen; it never writes over them.
+- **Transparent, never hidden, never boastful.** Be honest that AI is at work (no dark patterns) — but "AI" is never the headline or a badge. Capability is demonstrated, never announced.
+- **The user is the protagonist; the partner amplifies.** Keep the user as the subject/actor ("*you've* done more than your résumé says"). The Career Partner surfaces and re-threads *their* value — it never replaces their voice.
+
+This matters most on the **landing page** (Screen 1), whose headline sets the entire frame: lead with the user taking control of their career narrative, with the Career Partner as the empowering force beside them — not "an AI that fixes your résumé."
+
 ## Screen inventory (5 screens)
 
 ### Screen 1 — Landing page (the unauthenticated homepage)

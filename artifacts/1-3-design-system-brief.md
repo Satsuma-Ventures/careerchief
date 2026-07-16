@@ -3,7 +3,7 @@
 
 ## Venture context
 
-An AI product that **excavates a mid-career professional's real experience and re-threads it** into a narrative — résumé, positioning, interview prep — for the level they're now targeting. Grounded in real experience; never fabricated. Many users arrive at a vulnerable moment (recently laid off, screened out, drowning in AI sameness), so the product's first job emotionally is to feel like a trusted partner already in their corner.
+Meritous **excavates a mid-career professional's real experience and re-threads it** into a narrative — résumé, positioning, interview prep — for the level they're now targeting. Grounded in real experience; never fabricated. Many users arrive at a vulnerable moment (recently laid off, screened out, drowning in AI sameness), so the product's first job emotionally is to feel like a trusted partner already in their corner.
 
 *(The name is now decided — **Meritous** — see Name & brand architecture below. The logomark and full visual identity remain open, to be designed around the name and the sentiment.)*
 
@@ -86,7 +86,7 @@ Produce a complete design system: name, logomark, color palette, typography, com
 ```yaml
 ---
 name: meritous-design
-description: The Meritous design system — the visual and component language for the AI career partner.
+description: The Meritous design system — the visual and component language for the career partner in your corner.
 user-invocable: true
 ---
 ```

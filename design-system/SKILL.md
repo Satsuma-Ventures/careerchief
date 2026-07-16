@@ -1,6 +1,6 @@
 ---
 name: meritous-design
-description: The Meritous design system — the visual and component language for the AI career partner.
+description: The Meritous design system — the visual and component language for the career partner in your corner.
 user-invocable: true
 ---
 
