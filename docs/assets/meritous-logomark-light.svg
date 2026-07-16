@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="meritous">
+  <rect x="0.75" y="0.75" width="94.5" height="94.5" rx="22" fill="none" stroke="#F3ECDD" stroke-opacity="0.5" stroke-width="1.5"></rect>
+  <text x="48" y="62" font-size="60" text-anchor="middle" fill="#F3ECDD" font-family="Libertinus Serif, Georgia, serif" font-weight="400">m</text>
+  <rect x="33" y="70" width="30" height="5" rx="2.5" fill="#B98F3E"></rect>
+</svg>

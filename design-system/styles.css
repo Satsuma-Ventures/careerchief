@@ -1,0 +1,4 @@
+/* MERITOUS — compiler entry. Loads the token source of truth and the
+   component classes so the design-system compiler reads all tokens & fonts. */
+@import url('colors_and_type.css');
+@import url('components.css');

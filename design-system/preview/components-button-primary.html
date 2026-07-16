@@ -1,0 +1,16 @@
+<!-- @dsCard group="Components" name="Button — primary" subtitle="Default, hover, active, focus, disabled, sizes" viewport="700x460" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css">
+<style>.state{display:flex;flex-direction:column;gap:8px;align-items:flex-start}.state .meta{font-family:var(--font-text);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-400)}.states{display:grid;grid-template-columns:repeat(3,auto);gap:24px 32px;justify-content:start;margin-bottom:28px}</style></head>
+<body><div class="card">
+<p class="card-label">Components · Button — primary</p>
+<div class="states">
+  <div class="state"><button class="btn btn--primary">Continue</button><span class="meta">default</span></div>
+  <div class="state"><button class="btn btn--primary" style="background:var(--brand-hover);border-color:var(--brand-hover)">Continue</button><span class="meta">hover</span></div>
+  <div class="state"><button class="btn btn--primary" style="background:var(--brand-press);border-color:var(--brand-press);transform:translateY(1px)">Continue</button><span class="meta">active</span></div>
+  <div class="state"><button class="btn btn--primary" style="box-shadow:0 0 0 3px var(--paper),0 0 0 5px var(--ring)">Continue</button><span class="meta">focus</span></div>
+  <div class="state"><button class="btn btn--primary" disabled>Continue</button><span class="meta">disabled</span></div>
+</div>
+<hr class="rule">
+<div class="row"><button class="btn btn--primary btn--sm">Small</button><button class="btn btn--primary">Default</button><button class="btn btn--primary btn--lg">Large</button></div>
+<button class="btn btn--primary btn--block" style="margin-top:16px">Full-width · block</button>
+</div></body></html>

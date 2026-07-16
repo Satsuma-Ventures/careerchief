@@ -5,7 +5,19 @@
 
 An AI product that **excavates a mid-career professional's real experience and re-threads it** into a narrative — résumé, positioning, interview prep — for the level they're now targeting. Grounded in real experience; never fabricated. Many users arrive at a vulnerable moment (recently laid off, screened out, drowning in AI sameness), so the product's first job emotionally is to feel like a trusted partner already in their corner.
 
-*(Working name: CareerChief. The name, logomark, and full visual identity are open for this engagement — see Creative Direction below.)*
+*(The name is now decided — **Meritous** — see Name & brand architecture below. The logomark and full visual identity remain open, to be designed around the name and the sentiment.)*
+
+## Name & brand architecture
+
+**Name: Meritous** — from *merit*, earned and deserved worth. Pronounced *MER-i-tus*. The product surfaces and re-threads the value a user has genuinely earned but undersells, so the name *is* the promise. A latent reading worth leaning into: **"Merit + us"** — your earned worth, brought out *together* — which quietly reinforces the cofounder/partnership sentiment.
+
+**Two-layer architecture:**
+- **Meritous is the brand / institution** — the name on the door, the wordmark, the product noun ("open Meritous," "your Meritous brief").
+- **The AI speaks through named personas** — a small, curated cast of advisors (named later), each introduced by a human first name and each playing the role of **"your steward"** — e.g., *"Hi, I'm Ames, your steward."* Personas may be matched to the user's field or situation.
+
+**Implication for the design system:** it must express *two* identity layers — the stable Meritous master brand, and a lightweight **per-persona identity** (an avatar treatment and/or accent that distinguishes one steward from another) that lives *within* the master system without fragmenting it. The master brand carries meaning and gravitas; the persona layer carries warmth and the 1:1 relationship. Design the master brand first; leave disciplined, deliberate room for the persona layer.
+
+**Descriptor / positioning line (working):** *"the expert in your corner"* — SME + advocacy + warmth. Not final; don't hard-bake a tagline, but this is the tonal target.
 
 ## Brand sentiment
 
@@ -47,7 +59,7 @@ Desktop-first, high-focus. The signature interactions — a deep onboarding conv
 
 ## Creative direction
 
-**Everything is open.** Name, logomark, color palette, typography, spacing, component language — all are creative decisions for Claude Design to make in service of the brand sentiment above. No visual decisions from prior work should be carried forward. The brief above is the full creative brief.
+**The name is set — Meritous — and everything visual is open.** The logomark/wordmark (built around the name), color palette, typography, spacing, and component language are all creative decisions for Claude Design to make in service of the name, the brand architecture, and the brand sentiment above. No visual decisions from prior work should be carried forward. The brief above is the full creative brief.
 
 Principles derived from the brand sentiment to hold across every visual decision:
 
@@ -55,6 +67,14 @@ Principles derived from the brand sentiment to hold across every visual decision
 - **Discipline your accent.** Whatever color plays the achievement/accent role, reserve it for genuine milestones — a completed brief, a breakthrough score. Its restraint is what makes it land; use it freely and it reads as decoration.
 - **Authority through typography.** The reference points (private banking, editorial) achieve gravity through typographic hierarchy — not illustration, not color, not motion. Serif display + humanist sans is the proven pairing for this register. The specific choices are yours.
 - **The conversational interface must read as a skilled interview, not a chat widget.** Message bubbles, typing indicators, playful avatars — none of these. The dialogue register is a 1:1 with someone you trust deeply.
+
+## Logo approach — wordmark-forward
+
+The primary brand identity is a **wordmark** — the name *meritous* set in distinctive, crafted type — **not a pictorial logo.** This fits the *authority-through-typography* principle and keeps us out of the generic-AI-symbol trap (no spark, orb, robot, or abstract-tech glyph). Direction:
+
+- **Lead with the wordmark.** Confident, considered typography carries the identity. It must land the *earned-credible / editorial / quietly-premium* register — warm **and** authoritative — not the default friendly-geometric-sans startup look. (A founder wordmark exploration was reviewed and set aside for leaning too generic; start fresh.)
+- **Also provide a compact mark** for functional contexts the full wordmark can't serve — app icon, favicon, social avatar, small in-product brand token. Keep it **typographic**: a monogram (e.g. an `m` / `M` treatment) or a restrained mark *derived from the wordmark* — never a mascot or symbol.
+- The compact mark must read at small sizes and sit cleanly *above* the per-persona identity layer that arrives later, so keep it simple and recognizable.
 
 ## Output expectations
 
@@ -65,8 +85,8 @@ Produce a complete design system: name, logomark, color palette, typography, com
 **`SKILL.md`** — design system descriptor:
 ```yaml
 ---
-name: [chosen-name]-design
-description: The [Product Name] design system — the visual and component language for the AI career partner.
+name: meritous-design
+description: The Meritous design system — the visual and component language for the AI career partner.
 user-invocable: true
 ---
 ```
@@ -84,7 +104,7 @@ Followed by: brand personality summary, hard rules (never-violate constraints �
 ```
 Required cards: colors-brand, type-scale, type-display, type-body, components-button-primary, components-button-secondary, components-card, components-input, spacing-scale. Product-specific cards worth including: score-card, badges, progress.
 
-**`assets/`** — include logomark SVGs in both full-color and light variants: `[name]-lockup.svg`, `[name]-lockup-light.svg`, `[name]-lockup-stacked.svg`, `[name]-lockup-stacked-light.svg`, `[name]-logomark.svg`, `[name]-logomark-light.svg`.
+**`assets/`** — include logomark SVGs in both full-color and light variants: `meritous-lockup.svg`, `meritous-lockup-light.svg`, `meritous-lockup-stacked.svg`, `meritous-lockup-stacked-light.svg`, `meritous-logomark.svg`, `meritous-logomark-light.svg`.
 
 **`_ds_manifest.json`** — generated automatically by Claude Design.
 

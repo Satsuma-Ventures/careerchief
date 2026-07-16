@@ -1,0 +1,43 @@
+<!-- @dsCard group="Components" name="Career partner voice" subtitle="Narrative-first interview — not a chat bubble" viewport="700x460" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css"></head>
+<body><div class="card">
+<p class="card-label">Components · Career partner voice</p>
+<div class="steward" style="margin-bottom:28px">
+  <div class="steward__head">
+    <div class="steward__avatar"><span>A</span></div>
+    <div>
+      <p class="steward__name">Ames</p>
+      <p class="steward__role">Your Career Partner</p>
+    </div>
+  </div>
+  <p class="steward__say">Before we touch the résumé — tell me about the migration you led. Not the polished version. What was actually on fire when you walked in?</p>
+</div>
+<div class="respond" id="respond">
+  <textarea class="respond__input" id="respondInput" placeholder="Type your answer — or tap Dictate to speak it"></textarea>
+  <div class="respond__foot">
+    <span class="respond__status" id="respondStatus">Take your time.</span>
+    <button class="respond__mic" id="respondMic" type="button" aria-label="Dictate your answer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M6 11a6 6 0 0 0 12 0"></path><path d="M12 17v4"></path></svg>Dictate</button>
+  </div>
+</div>
+<script>
+(function(){
+  var box=document.getElementById('respond'),ta=document.getElementById('respondInput'),
+      mic=document.getElementById('respondMic'),status=document.getElementById('respondStatus');
+  var SR=window.SpeechRecognition||window.webkitSpeechRecognition,rec=null,live=false,base='';
+  if(!SR){status.textContent='Tip: use your keyboard’s dictation key to speak.';}
+  function stop(){live=false;box.classList.remove('is-live');mic.lastChild.textContent='Dictate';status.textContent='Take your time.';if(rec)rec.stop();}
+  mic.addEventListener('click',function(){
+    if(!SR){ta.focus();return;}
+    if(live){stop();return;}
+    rec=new SR();rec.lang='en-US';rec.interimResults=true;rec.continuous=true;
+    base=ta.value?ta.value.trim()+' ':'';
+    rec.onresult=function(e){var t='';for(var i=e.resultIndex;i<e.results.length;i++)t+=e.results[i][0].transcript;ta.value=base+t;};
+    rec.onend=function(){if(live){base=ta.value.trim()+' ';rec.start();}};
+    rec.onerror=function(){stop();};
+    live=true;box.classList.add('is-live');mic.lastChild.textContent='Stop';status.textContent='Listening…';rec.start();ta.focus();
+  });
+})();
+</script>
+<hr class="rule">
+<p class="t-caption t-measure" style="margin:0">The role line is Title Case ("Your Career Partner"). Typing and dictation share <strong>one field</strong> — the mic uses the browser's built-in Web Speech API (the same engine as the OS dictation key) to transcribe straight into the text, so there are no audio files to store or translate. No bubbles, no typing dots, no send button. The dialogue is set in the display serif to read as a skilled interview with someone you trust.</p>
+</div></body></html>

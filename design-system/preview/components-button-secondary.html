@@ -1,0 +1,16 @@
+<!-- @dsCard group="Components" name="Button — secondary & ghost" subtitle="Secondary, ghost, danger — all states" viewport="700x460" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="_base.css">
+<style>.state{display:flex;flex-direction:column;gap:8px;align-items:flex-start}.state .meta{font-family:var(--font-text);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-400)}.states{display:grid;grid-template-columns:repeat(3,auto);gap:24px 32px;justify-content:start;margin-bottom:24px}</style></head>
+<body><div class="card">
+<p class="card-label">Components · Button — secondary &amp; ghost</p>
+<div class="states">
+  <div class="state"><button class="btn btn--secondary">Review brief</button><span class="meta">secondary</span></div>
+  <div class="state"><button class="btn btn--secondary" style="border-color:var(--brand);background:var(--pine-tint)">Review brief</button><span class="meta">hover</span></div>
+  <div class="state"><button class="btn btn--secondary" disabled>Review brief</button><span class="meta">disabled</span></div>
+  <div class="state"><button class="btn btn--ghost">Not now</button><span class="meta">ghost</span></div>
+  <div class="state"><button class="btn btn--ghost" style="background:var(--surface-sunken);color:var(--ink-900)">Not now</button><span class="meta">ghost · hover</span></div>
+  <div class="state"><button class="btn btn--danger">Discard</button><span class="meta">danger</span></div>
+</div>
+<hr class="rule">
+<p class="t-caption t-measure" style="margin:0">Secondary carries most in-product actions on the calm surface. Ghost is for low-stakes, reversible choices. Danger stays quiet — outlined, never a loud red fill.</p>
+</div></body></html>
