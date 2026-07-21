@@ -1,5 +1,7 @@
-# Design System Brief: CareerChief
+# Design System Brief: Meritous
 *Date: 2026-07-08 · Skill: 3-concept v2.2*
+
+> **Rename note (2026-07-21):** This brief was written under the venture's original name, **CareerChief**. The venture was renamed **Meritous** (brand name committed 2026-07-13); occurrences of the old name have been updated in place. No other content has been changed.
 
 ## Venture context
 

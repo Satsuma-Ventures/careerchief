@@ -54,7 +54,7 @@ function HonestSection() {
                 <br/><br/>
                 There's no shortage of tools that will rewrite your resume in seconds. Most are making
                 things up — they know what resumes sound like, but they don't know <em>you</em>.
-                CareerChief starts with your actual experience, your actual decisions, your actual
+                Meritous starts with your actual experience, your actual decisions, your actual
                 outcomes. The point isn't to generate your story. The point is to help you{" "}
                 <strong style={{ color: "#1A2F4A", fontWeight: 500 }}>
                   uncover and articulate the one you already have.

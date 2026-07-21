@@ -1,12 +1,12 @@
 ---
 name: careerchief-design
-description: Use this skill to generate well-branded interfaces and assets for CareerChief, either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
+description: Use this skill to generate well-branded interfaces and assets for Meritous, either for production or throwaway prototypes/mocks/etc. Contains essential design guidelines, colors, type, fonts, assets, and UI kit components for prototyping.
 user-invocable: true
 ---
 
-# CareerChief design skill
+# Meritous design skill
 
-CareerChief is a career chief of staff. The brand is **authoritative but personable, strategic but warm** — the smartest person in your corner. The product works _alongside_ you, not _on top of_ you: it surfaces the story you already have, never hallucinates one.
+Meritous is a career chief of staff. The brand is **authoritative but personable, strategic but warm** — the smartest person in your corner. The product works _alongside_ you, not _on top of_ you: it surfaces the story you already have, never hallucinates one.
 
 ## How to use this skill
 

@@ -380,8 +380,8 @@ Current ventures:
 | Venture | Status |
 |---|---|
 | Cellarbook | Sprouting |
-| CareerChief | Sprouting |
 | Corner Street Commerce | Planted |
+| Meritous | Planted |
 | Zavari | Planted |
 | Weeknight Supper Club | Planted |
 

@@ -1,6 +1,8 @@
-# Signal Brief: CareerChief
+# Signal Brief: Meritous
 
 *Date: 2026-07-07 · Author: Satsuma Ventures · Skill: 1-signal v1.10*
+
+> **Rename note (2026-07-21):** This artifact was signed off under the venture's original name, **CareerChief**. The venture was renamed **Meritous** (brand name committed 2026-07-13); occurrences of the old name have been updated in place. No other content has been changed. The descriptor "career chief of staff" is retained deliberately — it is positioning language, not the brand name.
 
 ## The Problem
 
@@ -20,7 +22,7 @@ Mid-career, credentialed knowledge workers — three-plus roles of substantive m
 - **Premium human networks** — Chief (~$5,800+/yr, senior women executives): clubhouses, executive coaches, peer groups. A different user and axis (belonging/network vs. narrative), but it validates the *ceiling* of willingness-to-pay for a strategic partner "in your corner" — and its 2023 layoffs and capital-heavy physical model are precisely the AI-native opening: the same core value delivered personally, always-on, at software scale and price.
 - **Interview simulators, skills-gap/pathing, LinkedIn Premium, recruiters/headhunters/job boards** — each solves an adjacent slice (practice, gap detection, matching), none builds the deep personal narrative.
 
-**The white space:** no widely-adopted tool does structured, deep *excavation* of real experience and then *re-threads* it for the target level. That is the gap CareerChief occupies.
+**The white space:** no widely-adopted tool does structured, deep *excavation* of real experience and then *re-threads* it for the target level. That is the gap Meritous occupies.
 
 ## Why Now
 
@@ -30,9 +32,9 @@ Unusually strong convergence: a 2025 white-collar layoff wave (1.1M+ cuts, tech 
 
 Helps people accurately represent the real value they've created — reducing underselling, underemployment, and mis-leveling. Because every output is grounded in and traceable to the user's actual experience, it pushes *against* the fabrication/sameness dynamic degrading hiring, not with it.
 
-But the deeper impact is aligned to Satsuma's studio-level thesis of **AI-enabled empowerment.** Many of these users arrive anxious about AI — displaced by it, screened out by it, or drowning in AI-generated sameness — and their fear is largely a product of lack of experience, lack of imagination about the upside, and overexposure to negative sentiment. CareerChief can be, for many of them, the first time AI shows up not as a threat but as a force multiplier working *for* them — a partner that materially improves their life at a vulnerable, high-stakes moment. Turning AI-anxiety into AI-agency, at the exact moment someone feels most disempowered, is the strongest form of the net-positive case.
+But the deeper impact is aligned to Satsuma's studio-level thesis of **AI-enabled empowerment.** Many of these users arrive anxious about AI — displaced by it, screened out by it, or drowning in AI-generated sameness — and their fear is largely a product of lack of experience, lack of imagination about the upside, and overexposure to negative sentiment. Meritous can be, for many of them, the first time AI shows up not as a threat but as a force multiplier working *for* them — a partner that materially improves their life at a vulnerable, high-stakes moment. Turning AI-anxiety into AI-agency, at the exact moment someone feels most disempowered, is the strongest form of the net-positive case.
 
-Honest externality to watch: any application tool risks adding to volume in an already-flooded funnel — but CareerChief's realism-and-targeting emphasis pushes toward *fewer, better-fit* applications, which is net-reducing rather than net-additive.
+Honest externality to watch: any application tool risks adding to volume in an already-flooded funnel — but Meritous's realism-and-targeting emphasis pushes toward *fewer, better-fit* applications, which is net-reducing rather than net-additive.
 
 ## Why Satsuma
 
@@ -51,4 +53,4 @@ That **structured excavation and re-threading of a user's real experience produc
 1. **Does the elicitation-and-re-threading wedge hold and compound?** Not "can it be copied" (everything can) but: is the value large and habit-forming enough that first-mover depth, brand, and relationship become the durable advantage? Map the four competitor clusters against the white space concretely.
 2. **The stickiness / durable-companion thesis.** Does the relationship survive past the acute job-search moment into an ongoing "career chief of staff," and is that where retention/LTV lives — or is this a one-and-done market? This is the difference between a transaction and a compounding customer base.
 3. **Cold-start onboarding.** Will the target user truly invest the heavy up-front elicitation effort, and does a web UI convert that friction into completion rather than abandonment?
-4. **Monetization and the B2B option.** Where does CareerChief price against $9–29/mo tools and $400+ human coaches — and is the longer-term HR-SaaS / people-manager play (the "whoa" adjacency) a Phase 2 note or a real second act to size?
+4. **Monetization and the B2B option.** Where does Meritous price against $9–29/mo tools and $400+ human coaches — and is the longer-term HR-SaaS / people-manager play (the "whoa" adjacency) a Phase 2 note or a real second act to size?

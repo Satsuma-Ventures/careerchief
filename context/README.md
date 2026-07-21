@@ -1,4 +1,4 @@
-# careerchief — Context
+# Meritous — Context
 
 Drop background materials here: articles, prior research, competitor analysis,
 interview notes, or any other reference material Claude Code should be able to

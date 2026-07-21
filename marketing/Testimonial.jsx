@@ -38,7 +38,7 @@ function Testimonial() {
               fontWeight: 300,
             }}
           >
-            I've been a hiring manager for 12 years. CareerChief is the first tool that actually
+            I've been a hiring manager for 12 years. Meritous is the first tool that actually
             teaches candidates how to think about their story — not just format it.
           </div>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>

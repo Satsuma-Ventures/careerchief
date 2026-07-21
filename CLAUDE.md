@@ -1,4 +1,4 @@
-# CLAUDE.md — careerchief
+# CLAUDE.md — Meritous
 
 > AI leads, humans govern.
 
@@ -15,7 +15,7 @@ This file is read by Claude Code at the start of every session. It provides full
 
 ## Venture context
 
-**Venture name:** careerchief
+**Venture name:** Meritous
 **Repo:** satsuma-ventures/careerchief
 **Status:** See `STATUS.md`
 

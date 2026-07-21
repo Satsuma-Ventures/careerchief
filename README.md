@@ -1,4 +1,4 @@
-# careerchief
+# Meritous
 
 A Satsuma Ventures venture. Currently in Track 1 — Plant the Seed.
 

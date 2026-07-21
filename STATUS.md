@@ -1,4 +1,4 @@
-# careerchief — Status
+# Meritous — Status
 *Last updated: 2026-07-13*
 
 **Stage:** Planted
@@ -9,7 +9,7 @@
 **Blocking issues:** None
 **Open backlog items:** 0 (0 high priority)
 **Rocks:** None set
-**Claude Design project:** "CareerChief Design System" — `ece1c05b-bfd4-4527-ba29-989715d6af09` (persistent across phases; Phase 5 extends, Phase 6 anchors to it)
+**Claude Design project:** "Meritous Design System" — `ece1c05b-bfd4-4527-ba29-989715d6af09` (persistent across phases; Phase 5 extends, Phase 6 anchors to it)
 **Brand name:** **Meritous** (committed 2026-07-13; from *merit* — earned worth; latent "Merit + us" partnership reading). Real words screened and rejected on in-category/AI conflicts (Merritt = manager-coaching SW; Steward = career-AI + Lightspeed-funded startup; Reeve = multiple AI "chief of staff" startups). Meritous had no in-category conflict (only an obscure open-source game + a confusable "Meritious" UX shop). **Final legal/trademark clearance still needed with an attorney before launch.**
 **Brand architecture:** two layers — *Meritous* = master brand/institution; the AI speaks through a small named **persona cast**, each playing the role of **"your steward"** ("Hi, I'm Ames, your steward"), possibly matched to field/situation. Design system must carry a master brand + a lightweight per-persona identity layer. Working descriptor: *"the expert in your corner."*
 **Design system:** Generated in Claude Design and synced (commit `facd7b2`): `design-system/` (tokens, components.css, 14 preview cards, wordmark/monogram SVGs), `docs/brand.html`, and derived `DESIGN.md` at repo root. Direction: **all-serif** (Libertinus Serif, no sans/mono), **wordmark-forward** with a brass **"held-line"** motif (hairline while empty, brass when earned), **pine** brand `#1E3E32` + **brass** accent `#9A7833` (milestones only), warm ivory paper. **Note:** Claude Design renamed the persona role **"steward" → "Career Partner"** (steward read custodial/hands-off vs. an active partner) — pending founder confirmation. DESIGN.md + concept brief pushed back to the Claude Design project.

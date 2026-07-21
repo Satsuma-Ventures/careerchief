@@ -17,7 +17,7 @@ function Logomark({ size = 28, variant = "color" }) {
   return (
     <img
       src={src}
-      alt="CareerChief"
+      alt="Meritous"
       width={Math.round(size * MARK_RATIO)}
       height={size}
       style={{ display: "block" }}
@@ -33,7 +33,7 @@ function Lockup({ height = 22, variant = "color" }) {
   return (
     <img
       src={src}
-      alt="CareerChief"
+      alt="Meritous"
       width={Math.round(height * LOCKUP_RATIO)}
       height={height}
       style={{ display: "block" }}

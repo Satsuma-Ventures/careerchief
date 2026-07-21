@@ -175,7 +175,7 @@ function Hero() {
             </strong>
           </p>
           <p style={clar}>
-            Most people are underselling themselves and don't know it. CareerChief finds the gaps
+            Most people are underselling themselves and don't know it. Meritous finds the gaps
             between what you've done and what you're saying — and helps you close them.
             Not a resume generator. A real thinking partner.
           </p>

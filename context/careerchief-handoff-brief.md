@@ -1,16 +1,18 @@
-# CareerChief — Venture Concept Brief
+# Meritous — Venture Concept Brief
 
-> Context for the SDD agent picking up CareerChief at Phase 4 (Spec). This document covers the venture idea, product positioning, design system, and the key technical challenge to solve in the spec.
+> **Rename note (2026-07-21):** This brief was written under the venture's original name, **CareerChief**. The venture was renamed **Meritous** (brand name committed 2026-07-13); occurrences of the old name have been updated in place. No other content has been changed. The descriptor "career chief of staff" and the `skills/career-chief-of-staff/` path are retained deliberately — the phrase is positioning language, not the brand name. The filename of this document also still carries the old name.
+
+> Context for the SDD agent picking up Meritous at Phase 4 (Spec). This document covers the venture idea, product positioning, design system, and the key technical challenge to solve in the spec.
 
 ---
 
-## What CareerChief Is
+## What Meritous Is
 
-CareerChief is an **AI-powered career chief of staff** — a strategic partner that helps job seekers and career professionals articulate their experience, close narrative gaps, and show up prepared for every opportunity.
+Meritous is an **AI-powered career chief of staff** — a strategic partner that helps job seekers and career professionals articulate their experience, close narrative gaps, and show up prepared for every opportunity.
 
 The mental model is not "AI resume tool." It is a trusted chief of staff working behind the scenes — the kind of advisor who has done the homework, knows your history, spots what you're underselling, and makes sure you walk into every situation positioned to succeed.
 
-The core product insight: **most people are underselling themselves and don't know it.** There is a persistent gap between what people have actually done and how they are able to articulate it — in resumes, in interviews, on LinkedIn, in conversations. CareerChief exists to close that gap.
+The core product insight: **most people are underselling themselves and don't know it.** There is a persistent gap between what people have actually done and how they are able to articulate it — in resumes, in interviews, on LinkedIn, in conversations. Meritous exists to close that gap.
 
 The primary user is someone who takes their career seriously — whether actively searching or simply wanting to stay sharp and be ready. They are not looking for a resume template generator. They want a thinking partner.
 
@@ -18,14 +20,14 @@ The primary user is someone who takes their career seriously — whether activel
 
 ## The Differentiation That Must Be Preserved
 
-The market is saturated with AI tools that generate resume content. The differentiation that makes CareerChief worth building — and the thing the agent must never compromise in scoping or copy decisions — is:
+The market is saturated with AI tools that generate resume content. The differentiation that makes Meritous worth building — and the thing the agent must never compromise in scoping or copy decisions — is:
 
-**CareerChief is grounded in the user's real experience, not in what resumes are supposed to sound like.**
+**Meritous is grounded in the user's real experience, not in what resumes are supposed to sound like.**
 
 The AI's job is not to generate a story. It is to help the user uncover and articulate the one they already have. This distinction must be visible in the product — in how onboarding works, how coaching is framed, how outputs are presented, and what the product never claims to do.
 
 Specific guardrails:
-- CareerChief does not fabricate achievements, skills, or experience
+- Meritous does not fabricate achievements, skills, or experience
 - Every output is traceable to something the user actually told the system
 - The product should never position itself as a shortcut — it is a thinking partner, not a ghostwriter
 - "AI-powered" as a marketing phrase is explicitly off-brand; the capability should be demonstrated, not announced
@@ -74,9 +76,9 @@ These represent the approved mental model for what the product does. The spec wi
 
 ## The Skills Origin — and the Core Technical Problem
 
-The agentic capability powering CareerChief was originally built as a **personal career AI** — a single-user system with skills in `skills/career-chief-of-staff/`. These skills were built for one person, with one career, in one context. They work well in that form.
+The agentic capability powering Meritous was originally built as a **personal career AI** — a single-user system with skills in `skills/career-chief-of-staff/`. These skills were built for one person, with one career, in one context. They work well in that form.
 
-The product challenge CareerChief must solve in the spec is: **how do these skills scale to a multi-tenant environment?**
+The product challenge Meritous must solve in the spec is: **how do these skills scale to a multi-tenant environment?**
 
 Specifically, the spec needs to reason through:
 
@@ -131,7 +133,7 @@ Full design system tokens — spacing, radius, shadows, components, motion — a
 
 ## What Success Looks Like at MVP
 
-The MVP validates one thing: **that CareerChief can help a real user articulate their career story more effectively than they could on their own, and that they find the output genuinely useful.**
+The MVP validates one thing: **that Meritous can help a real user articulate their career story more effectively than they could on their own, and that they find the output genuinely useful.**
 
 A user who completes onboarding and walks away with a career brief that feels accurate, specific, and better than what they had before — that is a successful MVP interaction.
 
