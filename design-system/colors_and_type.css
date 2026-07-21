@@ -1,62 +1,78 @@
 /* ============================================================
-   MERITOUS — colors_and_type.css
+   MERITOUS — colors_and_type.css  ·  v2
    The implementation source of truth. Import this FIRST in any
    artifact built from this system.
-   "the expert in your corner" — intimate without being soft,
-   expert without being distant, candid without being cold.
+   "the ideal professional cofounder, applied to your career" —
+   intimate without being soft, expert without being distant,
+   candid without being cold. It's your story; you hold the pen.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,500&display=swap');
 
 :root {
   /* ---------- TYPEFACES ----------
-     One humanist oldstyle serif (Libertinus, a Linux Libertine fork) —
-     warm, edited, credible, and built for continuous reading, so it
-     carries everything: lockup, headings, leads, body, and UI.
-     Hierarchy comes from size, weight (400/600/700), italic, and
-     colour — never a second family. No sans, no monospace. */
-  --font-display: "Libertinus Serif", Georgia, "Times New Roman", serif;
-  --font-text: "Libertinus Serif", Georgia, "Times New Roman", serif;
-  /* deprecated alias — monospace removed from the system; degrades to the text serif */
-  --font-mono: var(--font-text);
+     TWO families, cleanly split by MEANING:
+     • SERIF (Literata) is the VOICE. It carries everything with
+       meaning — the partner's words, the user's own words, the
+       Career Brief, headlines, leads, body, eyebrows, all reading.
+       The serif reads like a letter, not a UI.
+     • SANS (Hanken Grotesk) is CHROME ONLY — nav, buttons, tiny
+       labels, metadata, badges. Nothing with meaning is sans.
+     Chosen deliberately over Inter/system-sans, which read
+     "generic AI." Never set body or voice in the sans. */
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-text:    "Literata", Georgia, "Times New Roman", serif;
+  --font-ui:      "Hanken Grotesk", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  /* deprecated aliases — mono removed; degrade to their v2 homes */
+  --font-mono: var(--font-ui);
 
   /* ---------- WARM NEUTRAL RAMP ----------
      A warm ivory paper world. Whites and blacks are toned, never
      clinical. All neutrals sit at very low chroma. */
   --paper:        #FBF8F2; /* app background — warm ivory */
   --surface:      #FFFFFF; /* raised cards, inputs */
-  --surface-sunken:#F1EBDE; /* wells, insets, code */
-  --ink-900:      #211E18; /* primary text — warm near-black */
+  --surface-sunken:#F1EBDE; /* wells, insets */
+  --ink-900:      #211E18; /* primary text — warm near-black, never #000 */
   --ink-700:      #443E34; /* strong secondary text */
-  --ink-500:      #6E6658; /* muted / secondary text */
-  --ink-400:      #938B7B; /* UI/decorative only — NEVER text (3.4:1, fails AA) */
+  --ink-500:      #6E6658; /* muted / secondary text (5.7:1 on paper) */
+  --ink-400:      #938B7B; /* UI/decorative only — NEVER text (fails AA) */
   --ink-300:      #BDB4A2; /* disabled marks only — NEVER active text */
-  --hairline:     #E6DFD0; /* borders, dividers */
+  --hairline:     #E6DFD0; /* borders, dividers — the structural workhorse */
   --hairline-strong:#D6CDBA;/* stronger dividers, input borders */
+
+  /* on-dark inks (for pine / milestone surfaces) */
+  --on-dark:        #F3ECDD; /* primary text on pine */
+  --on-dark-muted:  #C7BFAD; /* secondary text on pine (7.5:1 on pine-900) */
+  --on-dark-faint:  #8FA398; /* muted pine-green marks on dark — non-text */
 
   /* ---------- BRAND: PINE ----------
      Deep, grounded evergreen ink. Steady authority; the wordmark
-     color. Warm-authoritative, never cold navy. */
+     color; everyday actions and links. Warm-authoritative, never
+     cold navy. */
   --pine-950:     #0A1712;
-  --pine-900:     #102219; /* deep surfaces, footers — clearly darker than brand */
-  --brand:        #1E3E32; /* primary brand / actions — the anchor */
-  --brand-strong: #16302680; /* placeholder, overwritten below */
-  --brand-hover:  #2C5445; /* button hover — lighter, clearly distinct from base */
+  --pine-900:     #102219; /* deep surfaces, footers, milestone staging */
+  --brand:        #1E3E32; /* primary brand / actions / links — the anchor */
+  --brand-strong: #163026;
+  --brand-hover:  #2C5445; /* button hover — lighter, clearly distinct */
   --brand-press:  #14261F; /* button active — deeper than base */
-  --pine-600:     #3A6E58; /* muted pine, icons on light — clearly lighter than brand */
+  --pine-600:     #3A6E58; /* muted pine, icons on light */
   --pine-400:     #5C8574; /* muted pine, icons on light */
   --pine-tint:    #EAF0EC; /* pale pine surface */
   --pine-tint-strong:#DCE7E1;
 
-  /* ---------- ACCENT: BRASS (RESERVED) ----------
-     Earned worth = gold. The achievement color. DISCIPLINE:
-     use ONLY for genuine milestones (completed brief, breakthrough
-     score, a real credential). Never decorative. */
-  --accent:       #9A7833; /* antique brass — UI/borders only, NEVER text (3.9:1). Use accent-strong/accent-ink for text */
-  --accent-strong:#7C5F23; /* brass text on tint / pressed */
-  --accent-tint:  #F4EBD5; /* pale gold surface for milestone moments */
-  --accent-tint-strong:#EADFBF;
-  --accent-ink:   #664C18; /* readable brass-toned text */
+  /* ---------- ACCENT: LUMINOUS GOLD (RESERVED) ----------
+     Earned worth = gold. The color of ARRIVAL, and it must POP.
+     DISCIPLINE: use ONLY for genuinely earned states — the
+     held-line filling, the Story Score, a 100%/complete/brief-
+     complete milestone, a real credential. Never eyebrows, never
+     decoration. Gold sings on DARK (warm-on-warm won't), so stage
+     milestone moments on pine and use --accent-foil there. */
+  --accent:       #CE9E22; /* luminous gold — marks, held-line earned, fills on light */
+  --accent-foil:  #E4C05C; /* brighter foil — gold ON pine/dark (AA text on pine) */
+  --accent-strong:#7C5A12; /* gold text on ivory / tint (5.4:1 on paper) */
+  --accent-ink:   #5E440D; /* strong gold-toned text on tint (8:1 on paper) */
+  --accent-tint:  #F7ECC9; /* pale gold surface for milestone moments on light */
+  --accent-tint-strong:#ECD8A2;
 
   /* ---------- SEMANTIC ---------- */
   --success:      #3F6B4F;
@@ -72,33 +88,35 @@
   --bg:           var(--paper);
   --text:         var(--ink-900);
   --text-muted:   var(--ink-500);
-  --text-subtle:  var(--ink-500); /* text-safe subtle (5.7:1); ink-400 fails as text */
+  --text-subtle:  var(--ink-500); /* text-safe subtle; ink-400 fails as text */
   --border:       var(--hairline);
   --border-strong:var(--hairline-strong);
   --link:         var(--brand);
   --link-hover:   var(--brand-hover);
 
-  /* focus ring — pine-derived, calm, high-contrast */
-  --ring:         rgba(30, 62, 50, 0.70); /* raised from .40 → 4.6:1 for AA focus contrast (1.4.11) */
-  --ring-error:   rgba(162, 56, 42, 0.38);
+  /* focus ring — pine-derived, calm, high-contrast (AA, 1.4.11) */
+  --ring:         rgba(30, 62, 50, 0.70);
+  --ring-error:   rgba(162, 56, 42, 0.55);
+  --ring-on-dark: rgba(228, 192, 92, 0.75); /* foil-gold ring on pine surfaces */
 
   /* ---------- TYPE SCALE ----------
-     Desktop-first, editorial hierarchy. px values; scale down
-     ~0.85 on small screens via clamp in components. */
-  --fs-display: 78px; --lh-display: 1.03/* @kind other */; --ls-display: -0.022em/* @kind other */;
-  --fs-h1: 52px; --lh-h1: 1.06/* @kind other */; --ls-h1: -0.02em/* @kind other */;
-  --fs-h2: 34px; --lh-h2: 1.14/* @kind other */; --ls-h2: -0.013em/* @kind other */;
-  --fs-h3: 24px; --lh-h3: 1.34/* @kind other */; --ls-h3: -0.006em/* @kind other */;
-  --fs-body-lg: 25px; --lh-body-lg: 1.5/* @kind other */; --ls-body-lg: -0.003em/* @kind other */;
-  --fs-body: 18px; --lh-body: 1.72/* @kind other */; --ls-body: 0/* @kind other */;
-  --fs-caption: 17px; --lh-caption: 1.55/* @kind other */; --ls-caption: 0/* @kind other */;
-  --fs-label: 16px; --lh-label: 1.4/* @kind other */; --ls-label: 0.004em/* @kind other */;
+     Desktop-first, editorial hierarchy, calibrated to Literata.
+     Display tracking is TIGHT (set-in-metal), easing to ~0 at body.
+     Never hardcode fs/lh/ls in screens — always these tokens + .t-*. */
+  --fs-display: 68px; --lh-display: 1.15/* @kind other */; --ls-display: -0.035em/* @kind other */;
+  --fs-h1: 50px; --lh-h1: 1.15/* @kind other */; --ls-h1: -0.03em/* @kind other */;
+  --fs-h2: 33px; --lh-h2: 1.15/* @kind other */; --ls-h2: -0.02em/* @kind other */;
+  --fs-h3: 23px; --lh-h3: 1.15/* @kind other */; --ls-h3: -0.012em/* @kind other */;
+  --fs-body-lg: 23px; --lh-body-lg: 1.55/* @kind other */; --ls-body-lg: -0.006em/* @kind other */;
+  --fs-body: 18px; --lh-body: 1.7/* @kind other */; --ls-body: 0/* @kind other */;
+  --fs-caption: 16px; --lh-caption: 1.55/* @kind other */; --ls-caption: 0/* @kind other */;
+  --fs-label: 14px; --lh-label: 1.4/* @kind other */; --ls-label: 0.01em/* @kind other */;
   --fs-eyebrow: 17px; --lh-eyebrow: 1.4/* @kind other */; --ls-eyebrow: 0/* @kind other */;
-  --fs-mono: 17px; --lh-mono: 1.55/* @kind other */; --ls-mono: 0/* @kind other */;
+  --fs-mono: 14px; --lh-mono: 1.5/* @kind other */; --ls-mono: 0.01em/* @kind other */;
 
   --fw-light: 300/* @kind font */; --fw-regular: 400/* @kind font */; --fw-medium: 500/* @kind font */; --fw-semibold: 600/* @kind font */; --fw-bold: 700/* @kind font */;
 
-  /* ---------- SPACING (4pt base) ---------- */
+  /* ---------- SPACING (4pt base, generous) ---------- */
   --space-0: 2px;  --space-1: 4px;  --space-2: 8px;  --space-3: 12px;
   --space-4: 16px; --space-5: 24px; --space-6: 32px; --space-7: 48px;
   --space-8: 64px; --space-9: 96px; --space-10: 128px;
@@ -106,22 +124,22 @@
   /* ---------- RADII (modest, premium) ---------- */
   --radius-sm: 6px; --radius-md: 10px; --radius-lg: 16px; --radius-pill: 999px;
 
-  /* ---------- ELEVATION (soft, warm, no glow) ---------- */
-  --shadow-sm: 0 1px 2px rgba(33, 30, 24, 0.06);
-  --shadow-md: 0 4px 18px -6px rgba(33, 30, 24, 0.12);
-  --shadow-lg: 0 16px 44px -12px rgba(33, 30, 24, 0.18);
+  /* ---------- ELEVATION ----------
+     Flat and editorial: hairlines do the structural work. Shadows
+     are minimized — reserved for genuine overlays (menus, toasts),
+     never for resting cards. */
+  --shadow-sm: 0 1px 1px rgba(33, 30, 24, 0.03);
+  --shadow-md: 0 6px 20px -10px rgba(33, 30, 24, 0.14);
+  --shadow-lg: 0 18px 48px -16px rgba(33, 30, 24, 0.20);
 
   /* ---------- MOTION (composed, steadying) ---------- */
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1)/* @kind other */;
   --dur-fast: 120ms/* @kind other */; --dur: 190ms/* @kind other */; --dur-slow: 320ms/* @kind other */;
 
-  /* ---------- LAYOUT ---------- */
-  --measure: 68ch/* @kind other */;
+  /* ---------- LAYOUT (contained measure, large gaps) ---------- */
+  --measure: 66ch/* @kind other */;
   --container: 1160px/* @kind spacing */;
 }
-
-/* correct the brand-strong token (kept explicit for clarity) */
-:root { --brand-strong: #16302B; }
 
 /* component-level color tokens (were raw hex in components) */
 :root { --btn-primary-fg: #F7F3EA; --badge-neutral-bg: #EEF1F0; --badge-neutral-border: #DDE4E1; }

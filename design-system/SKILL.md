@@ -19,40 +19,45 @@ see about yourself and speaks candidly because they're unambiguously in your cor
 without being cold.** Target adjectives: in-your-corner, composed/steadying,
 earned-credible, editorial/considered, warm-authoritative, quietly premium, grounded/honest.
 
-The identity is **wordmark-forward** — the name *meritous* set in Libertinus Serif, all-lowercase,
-tracking -0.028em, pine ink, closed with a single **brass underscore** — *a line held for
-you*. From *merit* (earned worth). A brand layer
+The identity is **wordmark-forward** — the name *meritous* set all-lowercase in Literata,
+tight display tracking, pine ink, closed with a single **luminous-gold held line** that trails
+the word (sized to a lowercase letter's height) — *a line held for you*. From *merit* (earned
+worth). A brand layer
 (stable, gravitas) sits above a lightweight per-persona **career-partner** layer (warmth, the 1:1
 relationship) that arrives later — leave disciplined room for it; don't fragment the master
 brand.
 
 ## Hard rules (never violate)
 
-1. **Discipline the accent.** Brass (`--accent` #9A7833) appears ONLY at genuine milestones
-   — a completed brief, a breakthrough score, a real credential. Its restraint is what makes
-   it land; used freely it reads as decoration. The **one sanctioned exception** is the
-   **held-line motif** (the wordmark's trailing brass underscore and its in-product
-   descendants): a line is a quiet hairline while *empty/waiting* and turns brass only when
-   *earned/filled/signed* — so even the exception obeys the milestone logic. The wordmark
-   carries the brass underscore because the brand itself is the earned state.
+1. **Discipline the accent — luminous gold is arrival.** Gold (`--accent` #CE9E22; on dark use
+   the foil `--accent-foil` #E4C05C) appears ONLY when something is genuinely earned — a filled
+   held line, the Story Score, a completed/100% brief, a real credential. Its restraint is what
+   makes it land; used freely it reads as decoration. **Gold pops on dark, not on ivory**
+   (warm-on-warm won't sing), so stage genuine milestone moments on **pine/dark**, where gold
+   reads as gilt/foil. Everyday actions and links stay pine. Never gold for eyebrows, section
+   accents, or decoration. The **one sanctioned everyday use** is the **held-line motif** (the
+   wordmark's trailing gold line and its in-product descendants): a line is a quiet hairline
+   while *empty/waiting* and turns gold only when *earned/filled/signed* — so even it obeys the
+   milestone logic. The wordmark carries the gold line because the brand itself is the earned state.
 2. **No AI-sparkle / gradient ornament.** No neon/violet gradients, glow, circuit motifs,
    robot or spark mascots, or "✨ AI-powered" copy. "AI-powered" is off-brand copy. Capability
    is demonstrated, never announced.
 3. **Restraint is the signal.** Blank space and typographic confidence are the primary design
    tools. Decoration works against the trust this product must build.
-4. **Authority through typography, serif-forward.** Libertinus Serif (the text cut) carries
-   headings, the lockup, and the eyebrow, because serifs read as edited and credible (the trust
-   the product must earn). One family throughout — Libertinus Serif is a genuine text face, so
-   it carries body, leads, and UI as comfortably as display; hierarchy comes from size, weight,
-   italic, and colour, never a second typeface. **All-serif system — no sans, no monospace anywhere** —
-   sans reads app-generic and mono signals machine, both the opposite of the human register. The eyebrow is a sentence-case serif-italic standfirst, never a
-   tracked-out uppercase kicker (that stack — uppercase + wide tracking + mono micro-label —
-   is the templated-AI tell).
+4. **Two families, split by meaning.** **Literata (serif) is the VOICE** — it carries
+   everything with meaning: the partner's words, the user's own words, the Career Brief,
+   headlines, leads, body, and eyebrows. It reads like a letter, not a UI. **Hanken Grotesk
+   (sans) is CHROME ONLY** — nav, buttons, field labels, badges, metadata. **Nothing with
+   meaning is set in the sans**, and never Inter/system-sans (reads generic) or monospace
+   (signals machine). Display tracking is TIGHT (roughly -0.03 to -0.04em at large sizes),
+   easing to ~0 at body. The eyebrow is a sentence-case serif-italic standfirst, used sparingly,
+   never a tracked-out uppercase kicker and never restating the headline. Never hardcode
+   `font-size`/`line-height` — always the `--fs-*`/`--lh-*` tokens and `.t-*` utilities.
 5. **The conversation is a skilled interview, not a chat widget.** No message bubbles, typing
    indicators, or playful avatars. Set dialogue in the display serif; the register is a 1:1
    with someone you trust.
 
-### Capitalization rules (enforce universally)
+### Capitalization rules (enforce universally — CONTENT.md governs)
 
 Match these exactly — never claim one case and ship another:
 
@@ -60,18 +65,16 @@ Match these exactly — never claim one case and ship another:
   case** — capitalize only the first word and proper/product nouns. Each segment split by a `·`
   separator restarts as its own sentence case (e.g. *"Your Career Brief · Draft"*, *"Interview
   prep · In progress"*). Never Title Case, never ALL CAPS, never tracked-out.
-- **Persona / role descriptors** (`.steward__role` and any "Your ___" label): **Title Case** —
-  every principal word capitalized (e.g. *"Your Career Partner"*). The persona role is
-  **"Career Partner"** (not "steward" — that read custodial/hands-off; the register is an
-  active partner with skin in the game).
+- **Persona / role descriptors** (any "your ___" label): **Sentence case** — "your career
+  partner" is a role, not a proper noun. (Per CONTENT.md; warmer and customer-facing.)
 - **Status badges** (`.badge`): **Sentence case** — first word capitalized only (e.g. *"In progress"*,
   *"Brief complete"*, *"Needs input"*).
-- **Card titles** (`.card-c__title`): **Sentence case** — first word and proper nouns only
-  (role names, companies). E.g. *"Platform & reliability leadership"*, *"Director of Engineering — Northwind"*.
-- **Names**: as the proper noun is spelled (*Ames*).
+- **Named artifacts**: **Title Case** as proper nouns — *Career Brief, Story Score, Gap Detection*.
+  Generic mentions stay lowercase ("your brief," "the score").
+- **Card titles** (`.card-c__title`): **Sentence case** — first word and proper nouns only.
+- **Names**: as the proper noun is spelled (*Everett*).
 - **The wordmark**: always all-lowercase (*meritous*).
-- **Section/nav labels** (`.card-label`): ALL CAPS is permitted here only, as a structural chrome
-  label — never on user-facing content.
+- **Section/nav labels**: ALL CAPS is never used on user-facing content.
 6. **Not résumé-builder SaaS, job-board hustle, or personality-quiz gamification.** No
    dashboard-of-widgets, ATS gauges everywhere, "APPLY NOW", streaks, or quiz-toy energy.
 7. **Desktop-first, high-focus.** Generous spacing, calm surfaces, readable display headings,
@@ -79,17 +82,17 @@ Match these exactly — never claim one case and ship another:
 
 ## Palette (see colors_and_type.css)
 
-- **Brand — pine** `#1E3E32` (steady authority, primary actions, wordmark)
-- **Accent — brass** `#9A7833` (RESERVED; earned worth = gold)
-- **Warm neutrals** paper `#FBF8F2`, surface `#FFFFFF`, ink-900 `#211E18`, hairline `#E6DFD0`
+- **Brand — pine** `#1E3E32` (steady authority, primary actions, links, wordmark)
+- **Accent — luminous gold** `#CE9E22`, foil `#E4C05C` on dark (RESERVED; earned worth = gold, best on dark)
+- **Warm neutrals** paper `#FBF8F2`, surface `#FFFFFF`, ink-900 `#211E18`, hairline `#E6DFD0`; on-dark ink `#F3ECDD`
 - **Semantic** success `#3F6B4F`, error `#A2382A`, info `#35566B`
 
 ## Typography
 
-- **Everything — display, headings, lockup, eyebrow, body, leads, UI** — Libertinus Serif, one family
-- **Weights** — 400 body, 600 headings & labels, 700 rare emphasis; italic for leads, eyebrows, and quoted user words
-- **All-serif, no sans, no monospace** — the `--font-mono` token is a deprecated alias that
-  degrades to the text serif. Evidence/quoted user words are set in serif italic, anchored to a source.
+- **Voice (Literata, serif)** — display, headings, lockup, eyebrow, body, leads, the user's and partner's words
+- **Chrome (Hanken Grotesk, sans)** — nav, buttons, field labels, badges, metadata; nothing with meaning
+- **Weights** — 400 body, 500 h2/h3/labels, 600 buttons/badges/names, 700 rare emphasis; italic for leads, eyebrows, and quoted user words
+- **No system-sans, no monospace** — `--font-ui` is Hanken Grotesk; `--font-mono` is a deprecated alias to it. Evidence/quoted user words are set in serif italic, anchored to a source.
 
 ## File inventory
 
@@ -99,10 +102,31 @@ Match these exactly — never claim one case and ship another:
   card, badge, progress, score-card, career-partner voice (narrative-first input), link, dividers).
 - `styles.css` — compiler entry; imports the two files above.
 - `brand.html` — self-contained human-readable rendering of the full system.
+- `CONTENT.md` — content & design style guide (voice, capitalization, cast, layout rules). Governs copy.
 - `assets/` — logo SVGs: `meritous-lockup(.svg|-light)`,
   `meritous-logomark(.svg|-light)`.
 - `preview/_base.css` + `preview/*.html` — `@dsCard` component gallery (colors, type,
   buttons, input, card, spacing, badges, progress, score-card, career-partner voice, logo).
+
+## Photo credits — the `pexels-link` class
+
+Where photography is sourced from Pexels (via the `pexels_search_photos` tool), the delivered
+HTML must credit it inline, adjacent to the image: "Photo by [Photographer] on Pexels", linked
+to the photo page.
+
+The credit is metadata, so it is **chrome** — set in `--font-ui` at caption size, `--ink-500`.
+It is not the partner's voice and never sets in the serif. Do not use `.link` for it: the
+credit must not carry the underline of a real link, and it is **never gold** — a photo credit
+is not an earned milestone.
+
+```css
+.pexels-link{font-family:var(--font-ui);color:inherit;text-decoration:none;
+  transition:color var(--dur-fast) var(--ease)}
+.pexels-link::after{content:" ↗";opacity:0;transition:opacity var(--dur-fast) var(--ease)}
+.pexels-link:hover{color:var(--ink-900)}
+.pexels-link:hover::after{opacity:1}
+.pexels-link:focus-visible{outline:2px solid var(--ring);outline-offset:3px;border-radius:2px}
+```
 
 ## Usage
 
