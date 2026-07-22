@@ -39,6 +39,12 @@ brand.
    wordmark's trailing gold line and its in-product descendants): a line is a quiet hairline
    while *empty/waiting* and turns gold only when *earned/filled/signed* — so even it obeys the
    milestone logic. The wordmark carries the gold line because the brand itself is the earned state.
+   **Gold is a dial, not a switch — use the `--gild-1…4` scale** (and `--gild-on-dark-1…4` on pine):
+   how much it gilds encodes how much is genuinely earned. `gild-1` is neutral/unearned; `gild-4` is
+   full arrival and stays reserved. The Story Score gilds by band — `<60 → gild-1` (no gold),
+   `60–74 → gild-2`, `75–89 → gild-3`, `90+ → gild-4`; a partly-filled held line and progress gild
+   the same way. Fade toward the context's neutral, never white. **Wayfinding stays pine** — the
+   active-nav underline and everyday actions/links are pine; being on a page is not an achievement.
 2. **No AI-sparkle / gradient ornament.** No neon/violet gradients, glow, circuit motifs,
    robot or spark mascots, or "✨ AI-powered" copy. "AI-powered" is off-brand copy. Capability
    is demonstrated, never announced.

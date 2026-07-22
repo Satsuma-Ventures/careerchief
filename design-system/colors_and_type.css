@@ -74,6 +74,24 @@
   --accent-tint:  #F7ECC9; /* pale gold surface for milestone moments on light */
   --accent-tint-strong:#ECD8A2;
 
+  /* ---------- GILD SCALE — how earned, not just whether ----------
+     Gold is a DIAL, not a switch: the more genuinely earned, the more
+     it gilds. Step 1 is neutral (unearned); step 4 is full arrival and
+     stays reserved. Fade toward the CONTEXT'S neutral, never white —
+     on ivory toward the hairline, on pine toward the muted warm ink
+     (white on dark reads brighter, not muted). Use ONLY for things
+     genuinely earned or measured — the Story Score, a filling held
+     line, progress. Never a general palette; reaching for a middle
+     step asserts something is PARTLY earned. */
+  --gild-1:       #D8CDB4; /* unearned — reads neutral on paper */
+  --gild-2:       #DCC38C;
+  --gild-3:       #D6B052;
+  --gild-4:       #CE9E22; /* full = --accent; genuine arrival only */
+  --gild-on-dark-1:#C7BFAD; /* unearned on pine — muted warm ink */
+  --gild-on-dark-2:#D3C398;
+  --gild-on-dark-3:#DCC27A;
+  --gild-on-dark-4:#E4C05C; /* full foil = --accent-foil */
+
   /* ---------- SEMANTIC ---------- */
   --success:      #3F6B4F;
   --success-tint: #E7EFE8;
