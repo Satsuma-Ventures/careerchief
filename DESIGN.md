@@ -1,148 +1,152 @@
-# Meritous — Design System
-*Derived from Claude Design on 2026-07-15 · Phase 3 · Skill: 3-concept v2.2*
+# Meritous — Design System (DESIGN.md)
 
-The machine-readable translation of the Meritous design system for Phase 6 implementation.
-Source of truth for values: `design-system/colors_and_type.css` (tokens) and
-`design-system/components.css` (component classes). Human rendering: `docs/brand.html`.
+*Derived from the Claude Design project "Meritous Design System" (`ece1c05b-…`) · v2 · 2026-07-21.*
+*Source of truth: `design-system/colors_and_type.css` (tokens), `design-system/components.css` (component classes), `design-system/SKILL.md` (hard rules), `design-system/CONTENT.md` (content & design style guide). When they conflict, those files win over this summary.*
 
-**Anchor:** the ideal professional cofounder, applied to your career — *intimate without
-being soft, expert without being distant, candid without being cold.* Identity is
-**wordmark-forward** (the name *meritous* in Libertinus Serif, all-lowercase, pine ink, closed
-by a brass "held-line" underscore). **All-serif system — no sans, no monospace.**
+> **Do not make design decisions that contradict this file** (per CLAUDE.md). It is the implementation spec that Phase 4+ builds against.
 
-## Color tokens
+---
 
-```css
-:root {
-  /* Semantic roles */
-  --color-primary:      #1E3E32;  /* Pine — CTAs, wordmark, primary actions, links */
-  --color-primary-hover:#2C5445;  /* Button hover (lighter than base) */
-  --color-primary-press:#14261F;  /* Button active (deeper than base) */
-  --color-accent:       #9A7833;  /* Brass — RESERVED: genuine milestones ONLY, never decorative */
-  --color-accent-tint:  #F4EBD5;  /* Pale gold surface for achievement moments */
-  --color-accent-ink:   #664C18;  /* Readable text on brass tint */
-  --color-bg:           #FBF8F2;  /* Warm ivory page background */
-  --color-surface:      #FFFFFF;  /* Cards, inputs */
-  --color-surface-sunken:#F1EBDE; /* Wells, insets, code */
-  --color-text:         #211E18;  /* Primary text (ink-900) */
-  --color-text-strong:  #443E34;  /* Headings, strong secondary (ink-700) */
-  --color-text-muted:   #6E6658;  /* Secondary text (ink-500) */
-  --color-text-subtle:  #938B7B;  /* Placeholders, subtle marks (ink-400) */
-  --color-text-disabled:#BDB4A2;  /* Disabled text (ink-300) */
-  --color-rule:         #E6DFD0;  /* Borders and dividers (hairline) */
-  --color-rule-strong:  #D6CDBA;  /* Input borders, stronger dividers */
-  /* State colors */
-  --color-success:      #3F6B4F;
-  --color-error:        #A2382A;  /* Warm brick red */
-  --color-info:         #35566B;  /* Calm slate (non-alarming) */
-  /* (No dedicated "warning" — brass is milestone, not caution; use --color-info or error) */
-  /* Focus rings */
-  --ring:               rgba(30, 62, 50, 0.40);
-  --ring-error:         rgba(162, 56, 42, 0.38);
-}
-```
+## 0 · The register in one line
 
-Deep-surface pine for footers/dark panels: `--pine-900: #102219`. Pine tints for quiet
-fills: `--pine-tint: #EAF0EC`, `--pine-tint-strong: #DCE7E1`.
+Meritous reads like a **warm, considered publication that happens to be software** — an editorial reading surface, not an app dashboard. Calibrated (for register, never to clone) against **OpenWeb**, **Paragraph**, and **Read.cv** via Refero: all-serif warmth on warm paper, one reserved accent, flat hairline structure. The product truth beneath every rule: **it's your story; you hold the pen; the AI just helps you find the words.**
 
-## Typography
+---
 
-**Display / body / everything:** Libertinus Serif — `https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap`
-**Mono:** none — `--font-mono` is a deprecated alias that degrades to the serif.
+## 1 · Typography — two families, split by meaning
 
-One family throughout (lockup, headings, eyebrow, leads, body, UI). Hierarchy comes from
-size, weight, italic, and color — never a second family.
+The single most important rule. **Font choice encodes whether something has meaning or is chrome.**
 
-### Type scale
-| Role     | Size | Weight | Line height | Tracking  | Usage |
-|----------|------|--------|-------------|-----------|-------|
-| display  | 78px | 400    | 1.03        | -0.022em  | Hero statements (clamp min 40px) |
-| h1       | 52px | 400    | 1.06        | -0.02em   | Section headers (clamp min 32px) |
-| h2       | 34px | 500    | 1.14        | -0.013em  | Subsection, ink-700 |
-| h3       | 24px | 400    | 1.34        | -0.006em  | Card titles, ink-700 |
-| body-lg  | 25px | 400    | 1.5         | -0.003em  | Lead paragraphs |
-| body     | 18px | 400    | 1.72        | 0         | Sustained reading |
-| caption  | 15px | 400    | 1.55        | 0         | Secondary detail |
-| label    | 14px | 500    | 1.4         | 0.004em   | UI field labels |
-| eyebrow  | 16px | 400 *italic* | 1.4    | 0         | Editorial standfirst — **sentence case, serif italic, never tracked-out uppercase** |
+- **Literata** (`--font-display`, `--font-text`) — **the voice.** Everything with meaning: headlines, leads, body, eyebrows, the partner's words, the user's own words, the Career Brief. It reads like a letter, not a UI. `font-optical-sizing:auto`.
+- **Hanken Grotesk** (`--font-ui`) — **chrome only.** Nav, buttons, field labels, badges, metadata, system lines. Nothing with meaning. Chosen deliberately over Inter/system-sans, which read "generic AI." `--font-mono` aliases to `--font-ui` (no separate mono).
 
-**Weights:** 400 regular (body), 500 medium (h2, labels), 600 semibold (buttons, badges, names), 700 bold (rare emphasis). Italic for leads, eyebrows, and quoted user words.
+**Never** use a system/sans stack for content, and never set headings or reading text in Hanken.
 
-## Spacing scale
-Base unit: 4px. Tokens: `--space-0:2px · 1:4 · 2:8 · 3:12 · 4:16 · 5:24 · 6:32 · 7:48 · 8:64 · 9:96 · 10:128`px.
+**Display tracking is tight** — set-in-metal editorial feel. Loose display tracking is a generic-AI tell; avoid it.
 
-## Border radius
-`--radius-sm:6px` (buttons, inputs) · `--radius-md:10px` (respond field) · `--radius-lg:16px` (cards, score-card) · `--radius-pill:999px` (badges, progress, mic).
+### Type scale (px / line-height / letter-spacing)
+| Token | Size | LH | LS | Use |
+|---|---|---|---|---|
+| `--fs-display` | 68 | 1.15 | −0.035em | Hero display (`.t-display`, clamps down) |
+| `--fs-h1` | 50 | 1.15 | −0.03em | Page titles (`.t-h1`) |
+| `--fs-h2` | 33 | 1.15 | −0.02em | Section heads (`.t-h2`, italic) |
+| `--fs-h3` | 23 | 1.15 | −0.012em | Sub-heads (`.t-h3`) |
+| `--fs-body-lg` | 23 | 1.55 | −0.006em | Leads (`.t-body-lg`) |
+| `--fs-body` | 18 | 1.7 | 0 | Body (`.t-body`) |
+| `--fs-caption` | 16 | 1.55 | 0 | Captions (`.t-caption`) |
+| `--fs-label` | 14 | 1.4 | 0.01em | UI field labels (`.t-label`, **sans**) |
+| `--fs-eyebrow` | 17 | 1.4 | 0 | Editorial standfirst (`.t-eyebrow`, **serif italic, sentence case**) |
 
-## Elevation
-Soft, warm, never a glow. `--shadow-sm:0 1px 2px rgba(33,30,24,.06)` · `--shadow-md:0 4px 18px -6px rgba(33,30,24,.12)` · `--shadow-lg:0 16px 44px -12px rgba(33,30,24,.18)`.
+- **All heading line-heights are 1.15** (a prior drift to 1.3 was the bug that made screens feel loose — do not reintroduce). **Never hardcode** `font-size`/`line-height` in screens or inline styles; always the `--fs-*`/`--lh-*` tokens and `.t-*` utilities.
+- **Eyebrows are serif italic, sentence case** — an editorial standfirst, never a tracked-out uppercase kicker, never a restatement of the headline, never a section header on their own. (`ALL CAPS` sans is allowed only for tiny structural chrome labels like `.seclabel`.)
+- Weights: `--fw-regular:400 / medium:500 / semibold:600 / bold:700` (light 300 exists, rarely used). Headlines are usually **regular-weight serif**, not bold.
 
-## Motion
-Composed/steadying. `--ease:cubic-bezier(.22,.61,.36,1)` · `--dur-fast:120ms` · `--dur:190ms` · `--dur-slow:320ms`.
+---
 
-## Component definitions
-Full implementations with states live in `design-system/components.css`. Summary:
+## 2 · Color
 
-### Button — primary (`.btn.btn--primary`)
-- Background `--color-primary`; text `#F7F3EA`; height 44px; padding 0 24px; radius sm; weight 600.
-- Hover `--color-primary-hover`; active `--color-primary-press` + translateY(1px); disabled → pine-tint-strong bg / ink-300 text; focus-visible → double ring (paper + `--ring`).
-- Sizes: `--sm` 36px, `--lg` 52px; `--block` full width.
+Warm ivory paper, warm near-black ink (never pure `#000`), **pine** for authority, **luminous gold** as the reserved accent. **Warm neutrals only — never cold gray.**
 
-### Button — secondary / ghost / danger
-- **Secondary:** surface bg, pine text, rule-strong border; hover pine border + pine-tint fill.
-- **Ghost:** transparent, ink-700; hover surface-sunken.
-- **Danger:** transparent, error text, error-tint border; hover error-tint fill.
+### Core palette
+- **Paper / surface:** `--paper #FBF8F2` · `--surface #FFFFFF` · `--surface-sunken #F1EBDE`
+- **Ink:** `--ink-900 #211E18` · `--ink-700 #443E34` · `--ink-500 #6E6658` · `--ink-400 #938B7B` · `--ink-300 #BDB4A2`
+- **Hairlines:** `--hairline #E6DFD0` · `--hairline-strong #D6CDBA`
+- **Pine (brand):** `--brand #1E3E32` · `--brand-strong #163026` · `--brand-hover #2C5445` · `--brand-press #14261F` · `--pine-600 #3A6E58` · `--pine-400 #5C8574` · `--pine-tint #EAF0EC` · `--pine-tint-strong #DCE7E1` · dark grounds `--pine-900 #102219` · `--pine-950 #0A1712`
+- **On dark:** `--on-dark #F3ECDD` · `--on-dark-muted #C7BFAD` · `--on-dark-faint #8FA398`
+- **Accent (gold):** `--accent #CE9E22` · `--accent-foil #E4C05C` (on dark) · `--accent-strong #7C5A12` · `--accent-ink #5E440D` · tints `--accent-tint #F7ECC9` / `--accent-tint-strong #ECD8A2`
+- **Semantic:** success `#3F6B4F`, error `#A2382A`, info `#35566B` (+ tints / `-strong`)
 
-### Input / field (`.field`, `.input`)
-- Input: surface bg, 1px rule-strong border, radius sm, height 46px (textarea min 120px, resize-y).
-- Hover pine-400 border; focus pine border + `--ring`; disabled surface-sunken; error → error border + `--ring-error`, `.field__error` shown.
+### The gold discipline (the rule that keeps the brand from looking generic)
+1. **Gold is the color of arrival.** It appears **only** when something is genuinely earned: the held-line signing, the Story Score, a "Brief complete" milestone, a real credential. Never for eyebrows, section accents, or decoration. Its scarcity is the point.
+2. **Gold pops on dark, not on ivory** (warm-on-warm won't sing). **Stage genuine milestone moments on pine/dark**, where gold reads as gilt/foil (`--accent-foil`). Everyday actions/links are **pine**.
+3. **Gold is a dial, not a switch — the gild scale.** How *much* it gilds encodes how much is genuinely earned:
+   - On light: `--gild-1 #D8CDB4` (neutral, unearned) → `--gild-2 #DCC38C` → `--gild-3 #D6B052` → `--gild-4 #CE9E22` (full arrival, reserved).
+   - On dark: `--gild-on-dark-1 #C7BFAD` → `-2 #D3C398` → `-3 #DCC27A` → `-4 #E4C05C`.
+   - Fade toward the **context's neutral, never white** (on ivory → hairline; on dark → muted warm ink).
+   - **Story Score gilds by band:** `<60 → gild-1` (no gold at all), `60–74 → gild-2`, `75–89 → gild-3`, `90+ → gild-4`. Partly-filled held lines and progress gild the same way. Never reach for a middle step to assert something is "partly" earned unless it measurably is.
+4. **Wayfinding stays pine.** The active-nav underline and every everyday link/action are pine — being on a page is not an achievement. Gold is never spent on navigation.
 
-### Card (`.card-c`)
-- Surface bg, 1px hairline border, radius lg, padding 32px, shadow-sm.
-- `--interactive`: hover lifts (translateY(-2px) + shadow-md); focus-visible ring.
-- Parts: `__eyebrow` (serif italic, sentence case), `__title` (h3, 500), `__body` (ink-500).
+### Aliases
+`--bg→paper` · `--text→ink-900` · `--text-muted→ink-500` · `--border→hairline` · `--border-strong→hairline-strong` · `--link→brand` · `--link-hover→brand-hover`. Focus rings: `--ring rgba(30,62,50,.70)`, `--ring-error`, `--ring-on-dark`.
 
-### Badge (`.badge`)
-- Pill, height 26px, weight 600. Variants: neutral, outline, pine, **accent (MILESTONE ONLY)**, info, success, error. Optional live dot / check.
+---
 
-### Progress (`.progress`)
-- 6px pill track (surface-sunken), pine bar. `--complete` turns the bar **brass** (an earned state).
+## 3 · Space, radius, shadow, motion
 
-### Score card (`.score-card`)
-- The earned-milestone moment — **the sanctioned home of brass**: accent-tint-strong border + 3px brass left edge. Serif-italic accent eyebrow; large serif value (68px) with muted unit.
+- **Spacing (4pt base):** `--space-1 4` · `2 8` · `3 12` · `4 16` · `5 24` · `6 32` · `7 48` · `8 64` (scale extends `--space-0 2` … `--space-10 128`). Generous whitespace is a primary tool.
+- **Radius:** `--radius-sm 6` · `md 10` · `lg 16` · `pill 999`.
+- **Shadow:** `--shadow-sm/md/lg` exist but are **minimized** — flat, hairline-structured surfaces, not card-shadow SaaS.
+- **Motion:** `--ease cubic-bezier(.22,.61,.36,1)` · `--dur-fast 120ms` · `--dur 190ms` · `--dur-slow 320ms`. Honor `prefers-reduced-motion`.
+- **Measure:** `--measure 66ch`; container width ~1160px.
 
-### Career-partner voice (`.steward`) + Respond field (`.respond`)
-- **Not a chat bubble.** Named partner: circular pine-tint avatar (initial), name (600), role in serif italic (**"Your Career Partner"**). Utterance `.steward__say` set in display serif (21–23px), not a bubble.
-- `.respond`: one field the user can **type or dictate** into (Web Speech API); mic is an affordance on the field, no send button, no bubble. `is-live` state turns border/mic pine.
+---
 
-### Link (`.link`)
-- Pine, animated underline (1px → 2px on hover) via background-gradient; focus-visible ring. `--muted` variant.
+## 4 · Components (`design-system/components.css`)
 
-### Held-line motif (`.held-line`, `.held-blank`, `.wm-underscore`)
-- The brand's signature underscore: a quiet hairline while **empty/waiting**, turning **brass** only when **earned/filled/signed**. The wordmark's trailing brass underscore is its root; in-product blanks (`.held-blank--earned`) obey the same milestone logic.
+Full states (hover / press / disabled / focus-visible / error / empty) are defined. Key classes:
 
-## Hard rules
-Copied from `design-system/SKILL.md` — inviolable:
+- **Type utilities:** `.t-display .t-h1 .t-h2 .t-h3 .t-body-lg .t-body .t-caption .t-eyebrow` (serif voice) · `.t-label .t-meta` (sans chrome) · `.t-measure`.
+- **Buttons** (`.btn`, sans): `--primary` (pine), `--secondary` (surface/pine border), `--ghost`, `--danger`; sizes `--sm/--lg/--block`. Focus = double box-shadow ring.
+- **Field / input** (`.field`, `.input`, `textarea.input`): sans label, **serif value** (what the user types is voice). Error via `.field--error` / `aria-invalid`.
+- **Card** (`.card-c`): flat, hairline border, **no resting shadow**; `--interactive` hover lifts border to pine.
+- **Badge** (`.badge`, sans): `--neutral --outline --pine` everyday; `--accent` / `--gilt` (on pine) **for earned milestones only**; semantic `--info/--success/--error`. `.badge__check` for "confirmed."
+- **Progress** (`.progress`): pine bar; `.progress--complete` turns the bar gold (earned).
+- **Score card** (`.score-card`): **the arrival moment**, staged on `--pine-900` with foil gold — the sanctioned home of the accent. Left edge + value paint from `--gild-cur` by band. `--light` variant for rare non-dark contexts (gold stays muted).
+- **Avatar** (`.avatar`): a person set as an initial in the **display serif** (or `<img>`). Variants `--pine / --neutral / --on-dark`, sizes `--sm/--lg/--xl`; every initial clears WCAG AA. **Gold is never an avatar fill.**
+- **Partner voice** (`.steward` — legacy class name; render as "career partner"): a named partner speaking 1:1 — words in serif, name in serif, role tag in sans uppercase. **Not a chat bubble.**
+- **Respond** (`.respond`): one field, type **or** dictate (Web Speech API) — no chat bubble, no send-arrow loop. Value in serif; gentle status line stays serif italic (the partner's voice).
+- **Held-line** (`.held-line`): the brand motif — a hairline "line held for you"; `--earned` (gold) / `--earned-foil` (on dark) the moment it's signed/filled. Also `.held-blank` inline. The wordmark's trailing gold underscore = `.wm-underscore` / `.wordmark .u`.
+- **Rule / divider** (`.rule`, `.rule--accent`).
 
-1. **Discipline the accent.** Brass (`#9A7833`) appears ONLY at genuine milestones — a completed brief, a breakthrough score, a real credential. The one sanctioned exception is the **held-line motif** (hairline while empty, brass when earned) — which still obeys milestone logic.
-2. **No AI-sparkle / gradient ornament.** No neon/violet gradients, glow, circuit motifs, robot/spark mascots, or "✨ AI-powered" copy. "AI-powered" is off-brand copy. Capability is demonstrated, never announced.
-3. **Restraint is the signal.** Blank space and typographic confidence are the primary tools.
-4. **Authority through typography, serif-forward.** Libertinus Serif carries everything. **All-serif — no sans, no monospace anywhere** (sans reads app-generic, mono signals machine). Eyebrow is a sentence-case serif-italic standfirst, never a tracked-out uppercase kicker.
-5. **The conversation is a skilled interview, not a chat widget.** No message bubbles, typing indicators, or playful avatars. Set dialogue in the display serif.
-6. **Not résumé-builder SaaS, job-board hustle, or personality-quiz gamification.** No dashboard-of-widgets, ATS gauges everywhere, "APPLY NOW", streaks, or quiz-toy energy.
-7. **Desktop-first, high-focus.** Generous spacing, calm surfaces, readable display headings, body comfortable for sustained reading. Mobile stays fully usable; never busy, never rushed.
+---
 
-### Capitalization (enforce universally)
-- **Eyebrows/standfirsts:** sentence case (each `·`-separated segment restarts). Never Title Case / ALL CAPS / tracked-out.
-- **Persona/role descriptors** ("Your ___"): Title Case. The persona role is **"Career Partner"** (not "steward").
-- **Status badges:** sentence case ("In progress", "Brief complete").
-- **Card titles:** sentence case (proper nouns keep caps).
-- **The wordmark:** always all-lowercase (*meritous*).
-- **ALL CAPS** permitted only on structural chrome labels (`.card-label`), never on user-facing content.
+## 5 · Partner presence (product-critical)
 
-## Phase 6 implementation notes
-- Always use CSS custom properties — never hardcode hex values.
-- Import `design-system/colors_and_type.css` first, then `design-system/components.css` (or `design-system/styles.css` for both).
-- Reference `design-system/preview/` cards and `docs/brand.html` for component implementation targets.
-- **Brand assets** are `<text>`-based SVGs that rely on Libertinus Serif rendering — ensure the webfont loads, or convert the wordmark to outlines for a production logo asset.
-- **Persona layer** (the named "Career Partner" cast: avatars, accents, matched-vs-chosen) is intentionally left as room to extend in Phase 5 solutioning — do not fully bake it here.
+The chosen **career partner is present at every step**, not only while speaking:
+- A persistent **partnerchip** in the app chrome (`Parker · your career partner` with avatar) on every in-app screen.
+- **Speaker blocks** (`.speaker` / `.pspeak` / `.pmini`) attribute every partner utterance — the Brief, the Score read, the Tailoring coaching all carry an attributed voice. Never a disembodied "I."
+- The **cast** (6): **Everett** (engineers/builders) · **Parker** (product/operators) · **Devon** (design/research) · **Marlow** (marketing/brand) · **Finn** (finance/analytics) · **Soren** (strategy). Reserve pool: Ames, Hollis, Reeve. Each is a **dialect of one house voice** — see CONTENT.md §7.
+
+---
+
+## 6 · Interaction & voice law
+
+- **Extract → reflect → verify → get the user's sign-off on what matters → then capture.** Nothing lands on the page — no claim, no reframe — without the user's yes.
+- **Sign-off is not friction.** Confirm the things that *matter* once, and move. Do **not** re-confirm the obvious or quadruple-check (the Copilot anti-pattern).
+- **Reflect, never assume; suggest, never dictate.** Offer a phrasing; invite revise/approve. The user is the author; we amplify.
+- **House voice:** direct; **no superlatives, ever** (banned: amazing/incredible/world-class/the best/10x/rockstar); encouraging by taking the user seriously, not by praising; candid because it's in your corner; curious, not performing; reflective, not directive.
+- **AI, named honestly:** the partners are AI and we say so plainly — never disguised as human, never an "AI-powered" badge. Frame = empowerment via personalization ("works from your story alone, not the average of everyone else's").
+
+---
+
+## 7 · Capitalization
+
+- **Wordmark:** lowercase `meritous` — *only* as the logo lockup (with the gold `.u` underscore). In prose: **"Meritous"**.
+- **All customer-facing copy → sentence case.**
+- **Named artifacts → Title Case** as proper nouns: **Career Brief, Story Score, Gap Detection**. Generic mentions lowercase ("your brief," "the score").
+- **"career partner" → sentence case** (a role, not a proper noun). People's names as spelled.
+- `ALL CAPS` only on structural chrome labels, never on user-facing content.
+
+---
+
+## 8 · Layout & chrome
+
+- **Flat and editorial.** Warm hairline borders/rules do the structural work; minimize shadows. No card-shadow SaaS look, no dashboards, no feature-card marketing grids, no logo clouds, no pricing tables.
+- **Persistent editorial nav** — the real destinations (Conversations · Career Brief · Story Score · Interview prep) always present; active item marked by a **pine** underline. Never contextually swap nav links.
+- **The conversation is an interview, not prose and not a chat widget** — shorter turns, clear speaker attribution, the user's own words treated distinctly (a ledger/quote), generous space between turns.
+- **Not image-heavy.** The references aren't; neither are we. Imagery belongs on the marketing surface (`meetmeritous.com`), not the type-led product screens. The user supplies their own photo where a face is needed.
+
+---
+
+## 9 · Assets & artifacts in this repo
+
+- `design-system/colors_and_type.css` — tokens + font faces (source of truth).
+- `design-system/components.css` — component classes (v2).
+- `design-system/styles.css` — compiler entry (`@import`s the two above).
+- `design-system/SKILL.md` — hard rules; `design-system/CONTENT.md` — content & design style guide.
+- `design-system/assets/*.svg` — wordmark lockup + logomark (light/dark). **Production gap:** currently font-rendered; outline to vector paths before launch.
+- `design-system/preview/*` — component gallery cards (`_ds_manifest.json` indexes them).
+- `docs/concepts/screen-1…5.html` — the five concept screens (self-contained; inline `:root` token blocks — token edits reach them only via regeneration).
+- `docs/brand.html` — brand overview page (GitHub Pages).
+
+**Known production gaps (from the Phase 3 gate brief):** logos need outlining to vector paths; the Score gap-avatar initial is hardcoded in CSS and must be data-driven; a few component sizes remain hardcoded vs. tokens.

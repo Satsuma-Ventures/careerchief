@@ -1,17 +1,17 @@
 # Meritous — Status
-*Last updated: 2026-07-13*
+*Last updated: 2026-07-21*
 
-**Stage:** Planted
-**Current phase:** 3 — Concept
-**Phase started:** 2026-07-08
-**Last gate completed:** Phase 2 gate — Thesis (2026-07-08)
-**Next gate:** Track 1 terminal gate — Commit or Kill (at Phase 3 close)
+**Stage:** Sprouting (committed to Track 2)
+**Current phase:** 4 — Spec (entering) · Phase 3 Concept complete
+**Phase started:** 2026-07-08 (Phase 3)
+**Last gate completed:** Track 1 terminal gate — **Commit to Track 2** (2026-07-17)
+**Next gate:** Phase 4 gate — Spec sign-off
 **Blocking issues:** None
 **Open backlog items:** 0 (0 high priority)
 **Rocks:** None set
 **Claude Design project:** "Meritous Design System" — `ece1c05b-bfd4-4527-ba29-989715d6af09` (persistent across phases; Phase 5 extends, Phase 6 anchors to it)
 **Brand name:** **Meritous** (committed 2026-07-13; from *merit* — earned worth; latent "Merit + us" partnership reading). Real words screened and rejected on in-category/AI conflicts (Merritt = manager-coaching SW; Steward = career-AI + Lightspeed-funded startup; Reeve = multiple AI "chief of staff" startups). Meritous had no in-category conflict (only an obscure open-source game + a confusable "Meritious" UX shop). **Final legal/trademark clearance still needed with an attorney before launch.**
-**Brand architecture:** two layers — *Meritous* = master brand/institution; the AI speaks through a small named **persona cast**, each playing the role of **"your steward"** ("Hi, I'm Ames, your steward"), possibly matched to field/situation. Design system must carry a master brand + a lightweight per-persona identity layer. Working descriptor: *"the expert in your corner."*
-**Design system:** Generated in Claude Design and synced (commit `facd7b2`): `design-system/` (tokens, components.css, 14 preview cards, wordmark/monogram SVGs), `docs/brand.html`, and derived `DESIGN.md` at repo root. Direction: **all-serif** (Libertinus Serif, no sans/mono), **wordmark-forward** with a brass **"held-line"** motif (hairline while empty, brass when earned), **pine** brand `#1E3E32` + **brass** accent `#9A7833` (milestones only), warm ivory paper. **Note:** Claude Design renamed the persona role **"steward" → "Career Partner"** (steward read custodial/hands-off vs. an active partner) — pending founder confirmation. DESIGN.md + concept brief pushed back to the Claude Design project.
+**Brand architecture:** two layers — *Meritous* = master brand/institution; the AI speaks through a small named **career-partner cast**, matched to the user's field: **Everett** (engineers/builders), **Parker** (product/operators), **Devon** (design/research), **Marlow** (marketing/brand), **Finn** (finance/analytics), **Soren** (strategy). Shared "house voice" + a per-partner temperament (see `design-system/CONTENT.md` §7). Role label = **"your career partner"** (sentence case). Reserve pool: Ames, Hollis, Reeve.
+**Design system (v2):** Two type families split by meaning — **Literata** serif is *the voice* (all content/reading/headlines/eyebrows), **Hanken Grotesk** is *chrome only* (nav/buttons/labels/metadata); no Inter/system-sans. Warm ivory paper `#FBF8F2`, warm near-black ink, **pine** brand `#1E3E32`, **luminous gold** `#CE9E22` / foil `#E4C05C` as the color of *arrival* — spent only on what's earned, via the **`--gild-1…4` dial** (Story Score gilds by band; wayfinding stays pine). Held-line motif (hairline → gold when earned), flat/editorial, warm hairlines not shadows. Calibrated via **Refero** reference specs (OpenWeb/Paragraph/Read.cv) to escape the generic-AI register. Governed by `design-system/CONTENT.md` (content & design style guide) + `design-system/SKILL.md` (tokens/components/hard rules). Design lives in Claude Design project `ece1c05b-…`; DESIGN.md at repo root is the derived spec.
 
-**Latest note:** Phase 3 design system done and synced; `DESIGN.md` derived. Awaiting **concept-screen generation** in claude.ai/design (Step 12) — 4 screens per `concepts/CONCEPT_BRIEF.md`. Then: sync screens → gate brief → adversarial review → commit/kill gate. Brand sentiment anchor = **the ideal professional cofounder, applied to your career**. GTM: B2C-first; outplacement/severance-stack the later wedge. Longer-horizon: "sports agent" / reverse-sourcing reframe. Guardrail: do NOT compete as a résumé-generator/matcher — ChatGPT Jobs (mid-2026) commoditizes that shallow layer.
+**Latest note:** **Phase 3 complete — gate cleared, committed to Track 2 (2026-07-17).** Delivered: design system v2, five concept screens (`docs/concepts/screen-1…5`), concept brief, `artifacts/1-3-concept-narrative.md` (cold-share story), `artifacts/1-3-gate-brief.md` (recommendation: **Go**). The two things Track 2 must de-risk *first*, not carry silently: (1) **communicability** — do cold users get it fast; (2) the **elicitation** being genuinely better than a plain-LLM baseline. **In progress (this session):** clean repo sync of the v2 design system + all five screens + re-derived `DESIGN.md`. **Next:** start Track 2 / Phase 4 (Spec) in a fresh session (CLAUDE.md re-orients). Anchor = **the ideal professional cofounder, applied to your career**. GTM: B2C-first; outplacement/severance-stack the later wedge. Guardrail: do NOT compete as a résumé-generator/matcher — ChatGPT Jobs commoditizes that shallow layer.
